@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffdf1;
+}
+.header {
+    background-color: #FFD700;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.search-bar input {
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #1f1f1f;
+}
+
+.search-bar:hover {
+    border: 1px solid #FFD700;
+    transition: border 0.4s;
+}
+
+.chat-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #FFD700;
+    background-color: #fff8d4;
+}
+.chat-item img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.chat-item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover li {
+    background-color: #f7ebaf;
+    transition: background-color 0.4s
+}
