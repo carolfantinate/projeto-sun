@@ -41,14 +41,43 @@ header {
     color: #D3D3D3;
 }
 
+#botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
-    margin: 0;
-    width: 80%;
-    height: 69px;
-    background: #A67C52  url('imagens/pontinhos.png') right center no-repeat;
-    background-size: 30px;
+    width: 100px;
+    height: 25px;
     border: 0px;
     border-radius: 10px;
+    background: #A67C52;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: right;
+    padding-right:25px;
+    color: rgb(236, 236, 236);
+    margin-right: 10px;
+}
+
+button#but1 {
+    margin-top: 0;
+    background: url('imagens/pontinhos.png') right center no-repeat;
+    background-size: 20px;
+}
+
+button#but2 {
+    display: none;
+    margin-top: 0;
+    background: url('imagens/fechar.png') right center no-repeat;
+    background-size: 20px;
+}
+
+button:hover{
+    color: white;
+    font-size: 1em;
 }
 
 .aba-not {

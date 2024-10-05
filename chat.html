@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="chat-2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
-       body {
-        display: flex;
-       }
+        body {
+            display: flex;
+        }
 
-       #lista-chats{
-        align-self: flex-start;
-        width: 25%;
-        height: 100vh;
-       }
+        #lista-chats {
+            align-self: flex-start;
+            width: 25%;
+            height: 100vh;
+        }
 
         #aba2 {
             width: 75%;
@@ -42,9 +42,12 @@
                     </div>
                 </div>
             </header>
-            <button onclick="carregarAba3()"></button>
+            <div id="botoes">
+                <button onclick="carregarAba3()" id="but1">Ver mais</button>
+                <button onclick="voltar()" id="but2">Fechar</button>
+            </div>
         </div>
-        
+
         <div class="aba-not">
             <div class="notification">
                 Para sua segurança, não é permitido enviar mensagens nesse chat
