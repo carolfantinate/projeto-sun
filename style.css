@@ -15,17 +15,21 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Open Sans", sans-serif;
-    
+
     overflow-x: hidden;
 }
 
-
-
-#frase {
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0px;
     width: 100vw;
     height: 40px;
     background-color: var(--cabeçalho);
+}
+
+#frase {
     color: white;
     text-align: center;
 }
@@ -33,6 +37,8 @@ body {
 header {
     display: flex;
     justify-content: space-around;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 header>nav {
@@ -53,10 +59,6 @@ header img {
     border-radius: 5px;
 }
 
-header {
-    padding-top: 45px;
-    padding-bottom: 45px;
-}
 
 .nav {
     color: black;
@@ -168,6 +170,7 @@ section#sobre>h1 {
 
 section#sobre>p {
     width: 500px;
+    margin: auto;
 }
 
 /*----------------Seção final-------------------*/
@@ -178,7 +181,7 @@ section#sobre>p {
     margin-top: 30px;
 }
 
-footer{
+footer {
     width: 100vw;
     background: url('imagens/onda-verde.png') no-repeat;
     background-size: 100vw;

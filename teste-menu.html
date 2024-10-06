@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUN - saúde mental</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="media-teste.css">
+</head>
+
+<body onresize="mudouTamanho()">
+    <div class="topo">
+        <p id="frase">Fique a vontade, aqui você é livre!</p>
+    </div>
+    <header>
+
+        <img src="imagens/logo.png" alt="logo">
+
+        <i class="material-icons" id="burguer" onclick="clickMenu()">menu</i>
+        <menu id="menu">
+            <div id="itens-nav">
+                <a href="#" id="home">Home</a>
+                <a href="#" class="nav">Transtornos</a>
+                <a href="#" class="nav">Planos</a>
+                <a href="#" class="nav">Atendimento</a>
+                <a href="#" class="nav">Produtos</a>
+                <a href="#" class="nav">Artigo</a>
+            </div>
+        </menu>
+
+    </header>
+
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+
+</html>
