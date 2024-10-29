@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        #logar {
+            font-size: 0.9em;
+            margin: 40px;
+        }
+
+        #logar>a {
+            color: #fbd300;
+            text-decoration: none;
+        }
+
+        main {
+            background-color: #f5f5f5;
+            margin: auto;
+            padding: 30px;
+            width: 400px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(97, 95, 74, 0.37);
+        }
+
+        img {
+            width: 120px;
+        }
+
+        #botoes {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+        button {
+            background-color: red;
+            border: 0px;
+            width: 125px;
+            height: 125px;
+            border-radius: 10px;
+
+            &#especialista {
+                background-color: #80cbfb;
+            }
+
+            &#especialista:hover {
+                background-color: #75b9e4;
+            }
+
+
+            &#user {
+               background-color: #ffee95; 
+            }
+
+            &#user:hover {
+               background-color: #dacb80; 
+            }
+        }
+
+        button#especialista:hover {
+            background-color: #75b9e4;
+        }
+
+        #semcad {
+            text-decoration: none;
+            color: black;
+            font-size: 0.8em;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <p id="logar">Já possui uma conta? Clique <br> <a href="#">aqui</a> para logar</p> <!--Linkar com login-->
+
+    <main>
+        <img src="imagens/logo.png" alt="logo">
+        <h1>Cadastre-se!</h1>
+        <p>Selecione uma das opções à seguir para <br> personalizarmos a plataforma para você. <br> <br>
+            Você deseja prosseguir como...
+        </p>
+
+        <div id="botoes">
+            <div class="botao">
+                <button  id="especialista"><img src="" alt="cerebro"></button>
+                <p>Especialista da área <br> mental</p>
+            </div>
+            
+            <div class="botao">
+                <button  id="user"><img src="" alt="user"></button>
+                <p>Usuário</p>
+            </div>
+            
+        </div>
+
+        <a href="#" id="semcad">Continuar sem cadastro...</a> <!--Ir pra home sem acesso-->
+    </main>
+</body>
+
+</html>

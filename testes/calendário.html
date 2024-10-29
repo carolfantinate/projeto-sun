@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calendar">
+        <header>
+            <button onclick="changeMonth(-1)">&#8592;</button>
+            <h2 id="month-year"></h2>
+            <button onclick="changeMonth(1)">&#8594;</button>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dom</th>
+                    <th>Seg</th>
+                    <th>Ter</th>
+                    <th>Qua</th>
+                    <th>Qui</th>
+                    <th>Sex</th>
+                    <th>Sab</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                <!-- Células do calendário serão preenchidas pelo JavaScript -->
+            </tbody>
+        </table>
+        
+    </div>
+    <footer>
+        <p>Você não tem mais direitos à consultas este mês.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

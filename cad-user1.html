@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro usuário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #pag {
+            line-height: normal;
+            margin-bottom: 0;
+            text-align: right;
+            color: #a0a0a0;
+            margin-top: 7px;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        #logar {
+            font-size: 0.9em;
+            margin: 40px;
+        }
+
+        #logar>a {
+            color: #fbd300;
+            text-decoration: none;
+        }
+
+        main {
+            background-color: #f5f5f5;
+            margin: auto;
+            padding: 30px;
+            width: 400px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(97, 95, 74, 0.37);
+        }
+
+        img {
+            width: 120px;
+        }
+
+        
+        input {
+            width: 350px;
+            height: 30px;
+            padding: 5px;
+            border: 0px;
+            border-radius: 50px;
+            background-color: #e2dada;
+            margin-bottom: 9.5px;
+            padding-left: 15px;
+            font-size: 1em;
+        }
+
+        input::placeholder {
+            font-weight: bold;
+            color: #a0a0a0;
+        }
+
+        input:hover {
+            background-color: #d4d3d3;
+        }
+
+        input:focus {
+            outline: 0;
+        }
+        
+        button {
+            width: 145px;
+            height: 45px;
+            padding: 5px;
+            border: 2px solid #bda211;
+            border-radius: 50px;
+            background-color: #ffe55f;
+
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #ecd45be3;
+        }
+
+        button a {
+            color: #bda211;
+            font-weight: bolder;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p id="logar">Já possui uma conta? Clique <br> <a href="#">aqui</a> para logar</p> <!--Linkar com login-->
+
+    <main>
+        <img src="imagens/logo.png" alt="logo">
+        <h1>Cadastro de Usuário</h1>
+        <p>Agora insira os seus dados para acessar todos os <br> conteúdos disponíveis na plataforma.
+        </p>
+
+        <input type="text" name="nome" id="nome" placeholder="Nome"> <br>
+        <input type="email" name="email" id="email" placeholder="E-mail"> <br>
+        <input type="password" name="senha" id="senha" placeholder="Senha"> <br>
+        <input type="password" name="c-senha" id="c-senha" placeholder="Confirmar senha"> <br>
+
+        <button><a href="#" id="link">Seguir</a></button><!--Linkar com cad-user2-->
+
+        <p id="pag">1/2</p>
+    </main>
+</body>
+
+</html>
