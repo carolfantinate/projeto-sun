@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro usuário</title>
+    <link rel="stylesheet" href="estilos/cad-user2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="paragrafos">
+        <p class="logar" id="logar-user">Já possui uma conta usuário? <br>Clique <a href="#">aqui</a> para logar</p>
+        <!--Linkar com login usuário-->
+        <p class="logar" id="logar-esp">Já possui uma conta especialista? <br> Clique <a href="#">aqui</a> para logar
+        </p> <!--Linkar com login especialista-->
+    </div>
+
+    <main>
+        <a href="cad-geral.html"><i id="voltar" class="material-icons" id="icon-search">arrow_back_ios</i></a>
+
+        <img src="../imagens/logo.png" alt="logo">
+        <h1>Cadastro de Usuário</h1>
+        <p>Acesse nossos <a href="#" id="termos">termos de privacidade</a> e entenda o <br> porquê solicitamos as
+            seguintes informações.
+        </p>
+
+        <form action="#">
+            <input type="number" name="idade" id="idade" placeholder="Idade" min="12" max="110" required> <br>
+            <p class="p-left">Você já foi diagnosticado com algum <br> transtorno mental?</p>
+
+            <div class="container">
+                <div class="mae">
+                    <input type="radio" class="radio" name="opcao" id="ops" value="S">
+                    <label for="ops">Sim</label>
+                </div>
+                <div class="mae"></div>
+                <input type="radio" class="radio" name="opcao" id="opn" value="N">
+                <label for="opn">Não</label>
+            </div>
+            </div>
+
+            <p class="p-left">Se sim, qual ou quais?</p>
+            <input type="text" name="transt" id="transt" list="lsttranst">
+            <datalist id="lsttranst">
+                <option value="Ansidedade"></option>
+                <option value="Depressão"></option>
+                <option value="Bulimia"></option>
+            </datalist>
+
+            <a href="#" class="btn">Cadastrar</a>
+        </form>
+
+        <p id="pag">2/2</p>
+    </main>
+
+
+</body>
+
+</html>

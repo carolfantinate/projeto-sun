@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastro usuário</title>
-    <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Open Sans", sans-serif;
             margin: 0;
             padding: 0;
+            height: 10000px;
         }
 
         #pag {
@@ -18,6 +13,26 @@
             text-align: right;
             color: #a0a0a0;
             margin-top: 7px;
+        }
+
+        .paragrafos {
+            width: 350px;
+            margin: 30px 40px;
+        }
+
+        .logar {
+            font-size: 0.9em;
+
+
+            &#logar-user>a {
+                color: #fbd300;
+                text-decoration: none;
+            }
+
+            &#logar-esp>a {
+                color: #2092db;
+                text-decoration: none;
+            }
         }
 
         p {
@@ -41,18 +56,23 @@
         main {
             background-color: #f5f5f5;
             margin: auto;
-            padding: 30px;
+            padding: 30px 30px 10px 30px;
             width: 400px;
             border-radius: 10px;
             text-align: center;
             box-shadow: 0px 0px 10px rgba(97, 95, 74, 0.37);
         }
 
+        #voltar {
+            color: #a0a0a0;
+            float: left;
+        }
+
         img {
             width: 120px;
         }
 
-        
+
         input {
             width: 350px;
             height: 30px;
@@ -77,8 +97,13 @@
         input:focus {
             outline: 0;
         }
-        
-        button {
+
+        .mae {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .btn {
             width: 145px;
             height: 45px;
             padding: 5px;
@@ -87,40 +112,13 @@
             background-color: #ffe55f;
 
             margin-top: 15px;
-        }
 
-        button:hover {
-            background-color: #ecd45be3;
-        }
-
-        button a {
             color: #bda211;
             font-weight: bolder;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
 
-    </style>
-</head>
-
-<body>
-    <p id="logar">Já possui uma conta? Clique <br> <a href="#">aqui</a> para logar</p> <!--Linkar com login-->
-
-    <main>
-        <img src="imagens/logo.png" alt="logo">
-        <h1>Cadastro de Usuário</h1>
-        <p>Agora insira os seus dados para acessar todos os <br> conteúdos disponíveis na plataforma.
-        </p>
-
-        <input type="text" name="nome" id="nome" placeholder="Nome"> <br>
-        <input type="email" name="email" id="email" placeholder="E-mail"> <br>
-        <input type="password" name="senha" id="senha" placeholder="Senha"> <br>
-        <input type="password" name="c-senha" id="c-senha" placeholder="Confirmar senha"> <br>
-
-        <button><a href="#" id="link">Seguir</a></button><!--Linkar com cad-user2-->
-
-        <p id="pag">1/2</p>
-    </main>
-</body>
-
-</html>
+        .btn:hover {
+            background-color: #ecd45be3;
+        }

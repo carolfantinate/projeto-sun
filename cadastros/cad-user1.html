@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro usuário</title>
+    <link rel="stylesheet" href="estilos/cad-user1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="paragrafos">
+        <p class="logar" id="logar-user">Já possui uma conta usuário? <br>Clique <a href="#">aqui</a> para logar</p>
+        <!--Linkar com login usuário-->
+        <p class="logar" id="logar-esp">Já possui uma conta especialista? <br> Clique <a href="#">aqui</a> para logar
+        </p> <!--Linkar com login especialista-->
+    </div>
+
+    <main>
+        <a href="cad-geral.html"><i id="voltar" class="material-icons" id="icon-search">arrow_back_ios</i></a>
+
+        <img src="../imagens/logo.png" alt="logo">
+        <h1>Cadastro de Usuário</h1>
+        <p>Agora insira os seus dados para acessar todos os <br> conteúdos disponíveis na plataforma.
+        </p>
+
+        <form action="cad-user2.html">
+            <input type="text" name="nome" id="nome" placeholder="Nome" required> <br>
+            <input type="email" name="email" id="email" placeholder="E-mail" required> <br>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required minlength="8"> <br>
+            <input type="password" name="c-senha" id="c-senha" placeholder="Confirmar senha" required> <br>
+
+
+            <button class="btn" id="seguir">Seguir</button>
+
+        </form>
+
+        <p id="pag">1/2</p>
+    </main>
+
+</body>
+
+</html>

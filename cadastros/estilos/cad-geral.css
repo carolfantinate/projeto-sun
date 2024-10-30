@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        body {
+            font-family: "Open Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .paragrafos {
+            width: 350px;
+            margin: 30px 40px;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        .logar {
+            font-size: 0.9em;
+           
+
+            &#logar-user>a {
+                color: #fbd300;
+                text-decoration: none;
+            }
+
+            &#logar-esp>a {
+                color: #2092db;
+                text-decoration: none;
+            }
+        }
+
+        main {
+            background-color: #f5f5f5;
+            margin: auto;
+            padding: 30px;
+            width: 400px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(97, 95, 74, 0.37);
+            font-family: "Open Sans", sans-serif;
+        }
+
+        img {
+            width: 120px;
+        }
+
+        h1 {
+            font-family: "Katibeh", serif;
+            font-weight: bold;
+            font-size: 3em;
+            margin: 0px;
+        }
+
+        #botoes {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #botoes img {
+            width: 100px;
+            text-align: center;
+            align-self: center;
+        }
+
+
+        button {
+            background-color: red;
+            border: 0px;
+            width: 125px;
+            height: 125px;
+            border-radius: 10px;
+
+            &#especialista {
+                background-color: #80cbfb;
+            }
+
+            &#especialista:hover {
+                background-color: #82c0e7;
+            }
+
+
+            &#user {
+                background-color: #ffee95;
+            }
+
+            &#user:hover {
+                background-color: #efe19e;
+            }
+        }
+
+        #semcad {
+            text-decoration: none;
+            color: black;
+            font-size: 0.8em;
+        }
+
+        #semcad:hover {
+            font-weight: normal;
+            text-decoration: underline;
+        }
