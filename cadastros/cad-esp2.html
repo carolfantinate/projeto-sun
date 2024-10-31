@@ -106,32 +106,6 @@ Carol: é nois
             width: 120px;
         }
 
-
-        input {
-            width: 350px;
-            height: 30px;
-            padding: 5px;
-            border: 0px;
-            border-radius: 50px;
-            background-color: #e2dada;
-            margin-bottom: 9.5px;
-            padding-left: 15px;
-            font-size: 1em;
-        }
-
-        input::placeholder {
-            font-weight: bold;
-            color: #a0a0a0;
-        }
-
-        input:hover {
-            background-color: #d4d3d3;
-        }
-
-        input:focus {
-            outline: 0;
-        }
-
         .btn {
             width: 145px;
             height: 45px;
@@ -157,6 +131,86 @@ Carol: é nois
         .logar {
             text-align: right;
         }
+
+        /* Esconde o input original */
+        .file-upload input[type="file"] {
+            display: none;
+        }
+
+        /* Estiliza o label como um botão */
+        .file-label {
+            padding: 15px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: #e2dada;
+            color: #9a9a9a;
+            font-weight: bold;
+            margin-bottom: 9.5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .file-label:hover {
+            background-color: #d4d3d3;
+        }
+
+        /* Estilo para o nome do arquivo */
+        .file-name {
+            font-size: 14px;
+            color: #9a9a9a;
+        }
+
+        #anexo {
+            font-size: 23px;
+        }
+
+        textarea {
+            width: 93%;
+            height: 80px;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #e2dada;
+            color: #9a9a9a;
+            border: 1px solid #ddd;
+            border-radius: 18px;
+            font-family: "Open Sans", sans-serif;
+            resize: none;
+        }
+
+        textarea:hover {
+            background-color: #d4d3d3;
+        }
+        
+        /* Efeito ao focar no textarea */
+        textarea:focus {
+            outline: none;
+            background-color: #e2dada;
+        }
+
+        /* Placeholder estilizado */
+        textarea::placeholder {
+            font-weight: bold;
+            color: #9a9a9a;
+        }
+
+        /* Rolagem personalizada */
+        textarea::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        textarea::-webkit-scrollbar-track {
+            background-color: #dee2da;
+            border-radius: 8px;
+        }
+
+        textarea::-webkit-scrollbar-thumb {
+            background-color: #9f9f9f;
+            border-radius: 8px;
+        }
     </style>
 </head>
 
@@ -178,20 +232,27 @@ Carol: é nois
 
     <div>
         <main>
-            <a href="cad-geral.html"><i id="voltar" class="material-icons" id="icon-search">arrow_back_ios</i></a>
+            <a href="cad-esp1.html"><i id="voltar" class="material-icons" id="icon-search">arrow_back_ios</i></a>
             <img src="../imagens/logo.png" alt="logo">
             <h1>Cadastro de Especialista</h1>
             <p>Preencha os dados necessários para utilizar a plataforma como especialista.
             </p>
-            <form action="cad-user2.html">
-                <input type="text" name="nome" id="nome" placeholder="Nome completo" required> <br>
+            <form action=""> <!--login esp-->
 
-                
-                <textarea name="" id=""></textarea>
+                <div class="file-upload">
+                    <label for="file-input" class="file-label">
+                        <span>Anexar currículo (PDF) </span>
+                        <i class="material-icons" id="anexo">attach_file</i>
+                        <input type="file" id="file-input" accept=".pdf">
+                    </label>
+                    <!--<span id="file-name" class="file-name">Nenhum arquivo selecionado</span>-->
+                </div>
 
-                <button class="btn" id="seguir">Seguir</button>
+                <textarea name="area" id="area" placeholder="Deixar comentário"></textarea> <br>
+
+                <button class="btn" id="cadatrar">Cadastrar</button>
             </form>
-            <p id="pag">1/2</p>
+            <p id="pag">2/2</p>
         </main>
         <p class="logar">Se você já possui uma conta, clique <a href="#">aqui</a></p>
     </div>

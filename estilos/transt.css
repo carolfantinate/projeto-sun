@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        body {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        #texto {
+            margin: auto;
+            width: 60%;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            color: #854c24;
+            font-family: "Katibeh", serif;
+        }
+
+        main {
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            width: 70vw;
+        }
+
+        details {
+            margin: auto;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            max-width: 380px;
+
+            &.mental {
+                background-color: #ffe55f;
+            }
+
+            &.alimentar {
+                background-color: #bf997e;
+            }
+
+            &.outros {
+                background-color: #54cc64;
+            }
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.3em;
+            padding: 7px 15px;
+            display: flex;
+            align-items: center;
+            width: 90%;
+            justify-content: space-between;
+
+            &.amarelo {
+                color: #bda211;
+            }
+
+            &.marrom {
+                color: #854c24;
+            }
+
+            &.verde {
+                color: #42791f;
+            }
+        }
+
+        summary:hover {
+            font-weight: bolder;
+        }
+
+        summary::marker {
+            content: none;
+        }
+
+        i#seta {
+            font-size: 35px;
+        }
+
+        details p {
+            margin: 0;
+            border-radius: 10px;
+            padding: 15px;
+
+            &.men {
+                background-color: #fff8d4;
+            }
+
+            &.ali {
+                background-color: #f2d2bb;
+            }
+
+            &.out {
+                background-color: #d6ffd4;
+            }
+        }
+
+        div.cards {
+            margin-top: 20px;
+            width: 500px;
+        }
