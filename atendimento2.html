@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/navbar.css">
+    <link rel="stylesheet" href="estilos/calendário.css">
+    <link rel="stylesheet" href="estilos/historico.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="estilos/online.css">
+    <style>
+        body {
+            height: 1000px;
+        }
+
+        .grid-container {
+            display: grid;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #item-1 {
+            grid-column: 1;
+        }
+
+        #item-2 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #item-3 {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="topo">
+        <p id="frase">Fique a vontade, aqui você é livre!</p>
+    </div>
+    <header class="navegação">
+
+        <img src="imagens/logo.png" alt="logo">
+        <nav>
+            <a href="home.html" class="nav">Home</a>
+            <a href="transtornos.html" class="nav">Transtornos</a>
+            <a href="#" class="nav">Planos</a>
+            <a href="#" id="atual">Atendimento</a>
+            <a href="#" class="nav">Produtos</a>
+            <a href="#" class="nav">Artigo</a>
+        </nav>
+    </header>
+
+    <!--------------Calendário--------------->
+    <div class="grid-container">
+        <div id="item-1">
+            <div class="calendar">
+                <header class="cal">
+                    <button onclick="changeMonth(-1)">&#8592;</button>
+                    <h2 id="month-year"></h2>
+                    <button onclick="changeMonth(1)">&#8594;</button>
+                </header>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dom</th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sab</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+                        <!-- Células do calendário serão preenchidas pelo JavaScript -->
+                    </tbody>
+                </table>
+
+            </div>
+            <footer>
+                <p>Você não tem mais direito à consultas este mês.</p>
+            </footer>
+            <script src="calendar.js"></script>
+        </div>
+
+        <!------------histórico------------->
+        <div id="item-2">
+            <div class="history-container">
+                <h3>Histórico e avaliações</h3>
+                <div class="specialist" id="specialist1">
+                    <div class="specialist-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png" alt="Especialista 1"
+                            class="specialist-avatar">
+                        <span class="specialist-name">Especialista 1</span>
+                    </div>
+                    <div class="rating">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                    </div>
+                </div>
+                <div class="specialist" id="specialist2">
+                    <div class="specialist-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png" alt="Especialista 2"
+                            class="specialist-avatar">
+                        <span class="specialist-name">Especialista 2</span>
+                    </div>
+                    <div class="rating">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                    </div>
+                </div>
+                <div class="specialist" id="specialist3">
+                    <div class="specialist-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png" alt="Especialista 3"
+                            class="specialist-avatar">
+                        <span class="specialist-name">Especialista 3</span>
+                    </div>
+                    <div class="rating">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                    </div>
+                </div>
+                <div class="specialist" id="specialist4">
+                    <div class="specialist-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png" alt="Especialista 4"
+                            class="specialist-avatar">
+                        <span class="specialist-name">Especialista 4</span>
+                    </div>
+                    <div class="rating">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                        <img src="imagens/star.png" alt="estrela">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----------Online---------------->
+        <div id="item-3">
+            <div class="online-container">
+                <h3>Especialistas on-line</h3>
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://via.placeholder.com/40"  class="especialista-avatar">
+                        <p>Especialista 1</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+            
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://via.placeholder.com/40" class="especialista-avatar">
+                        <p>Especialista 2</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+                
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://via.placeholder.com/40" class="especialista-avatar">
+                        <p>Especialista 3</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://via.placeholder.com/40" alt="Especialista 4" class="especialista-avatar">
+                        <p>Especialista 4</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+            
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://via.placeholder.com/40" class="especialista-avatar">
+                        <p>Especialista 5</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+                
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://via.placeholder.com/40" class="especialista-avatar">
+                        <p>Especialista 6</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://via.placeholder.com/40" class="especialista-avatar">
+                        <p>Especialista 7</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://via.placeholder.com/40" class="especialista-avatar">
+                        <p>Especialista 8</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://via.placeholder.com/40" class="especialista-avatar">
+                        <p>Especialista 9</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://via.placeholder.com/40" class="especialista-avatar">
+                        <p>Especialista 10</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

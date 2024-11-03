@@ -1,0 +1,59 @@
+.online-container {
+    width: 270px;
+    background-color: #c0ffba;
+    padding: 20px 20px 13px 20px;
+    border-radius: 10px;
+}
+
+.especialista:hover  {
+    font-weight: bold;
+    color: #30973e;
+
+    &.info {
+        color: rgb(43, 144, 0);
+    }
+}
+
+.online-container h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.especialista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 0;
+    border-top: 1px solid #54cc64;
+}
+
+.especialista:first-child {
+    border-top: none;
+}
+
+.especialista:last-child {
+    padding-bottom: 0px;
+}
+
+.especialista-info {
+    display: flex;
+    align-items: center;
+}
+
+.especialista-avatar {
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info {
+    color: #39b54a;
+    font-size: 25px;
+}
+
+.info:hover {
+    cursor: pointer;
+    color: rgb(43, 144, 0);
+    transition: 0.5s;
+}

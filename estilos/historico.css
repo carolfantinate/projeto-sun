@@ -1,0 +1,55 @@
+.history-container {
+    width: 346px;
+    max-height: 200px;
+    overflow-y: scroll;
+    background-color: #FFEE99;
+    padding: 12px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.history-container::-webkit-scrollbar {
+    background-color: #bf997e;
+    border-radius: 0px 10px 10px 0px;
+    width: 17px;
+}
+
+.history-container::-webkit-scrollbar-thumb {
+    background-color: #8e6a51;
+    border-radius: 10px;
+}
+
+.history-container h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.specialist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #fbd300;
+}
+
+.specialist:last-child {
+    border-bottom: none;
+}
+
+.specialist-info {
+    display: flex;
+    align-items: center;
+}
+
+.specialist-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.rating img{
+    width: 25px;
+}
