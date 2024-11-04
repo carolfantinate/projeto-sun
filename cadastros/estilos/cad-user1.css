@@ -4,7 +4,7 @@
             font-family: "Open Sans", sans-serif;
             margin: 0;
             padding: 0;
-            height: 10000px;
+            height: 100vh;
         }
 
         #pag {
@@ -18,6 +18,7 @@
         .paragrafos {
             width: 350px;
             margin: 30px 40px;
+            position: absolute;
         }
 
         .logar {
@@ -53,6 +54,15 @@
             text-decoration: none;
         }
 
+        #tela {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         main {
             background-color: #f5f5f5;
             margin: auto;
@@ -61,6 +71,8 @@
             border-radius: 10px;
             text-align: center;
             box-shadow: 0px 0px 10px rgba(97, 95, 74, 0.37);
+
+            position: relative;
         }
 
         #voltar {
@@ -121,4 +133,50 @@
 
         .btn:hover {
             background-color: #ecd45be3;
+        }
+
+        .flor1, .flor2, .flor3, .flor4, .flor5, .flor6, .flor7 {
+            position: absolute;
+        }
+        
+        .flor1 {
+            width: 160px;
+            top: 380px;
+            left: -110px;
+        }
+        
+        .flor2 {
+            width: 50px;
+            top: 510px;
+            left: 55px;
+        }
+        
+        .flor3 {
+            width: 70px;
+            top: 300px;
+            left: -40px;
+        }
+        
+        .flor4 {
+            width: 190px;
+            top: 190px;
+            right: -150px;
+        }
+        
+        .flor5 {
+            width: 80px;
+            top: 370px;
+            right: -50px;
+        }
+        
+        .flor6 {
+            width: 80px;
+            top: 100px;
+            right: -50px;
+        }
+        
+        .flor7 {
+            width: 45px;
+            top: -20px;
+            right: 75px;
         }
