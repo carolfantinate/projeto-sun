@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../popups.css">
+    <style>
+        body {
+            background-color: #FCFCFC;
+        }
+
+        .cover {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .blur-in {
+            -webkit-animation: blur 2s forwards;
+            -moz-animation: blur 2s forwards;
+            -o-animation: blur 2s forwards;
+            animation: blur 2s forwards;
+        }
+
+        .blur-out {
+            -webkit-animation: blur-out 2s forwards;
+            -moz-animation: blur-out 2s forwards;
+            -o-animation: blur-out 2s forwards;
+            animation: blur-out 2s forwards;
+        }
+
+        @-webkit-keyframes blur {
+            0% {
+                -webkit-filter: blur(0px);
+                -moz-filter: blur(0px);
+                -o-filter: blur(0px);
+                -ms-filter: blur(0px);
+                filter: blur(0px);
+            }
+
+            100% {
+                -webkit-filter: blur(4px);
+                -moz-filter: blur(4px);
+                -o-filter: blur(4px);
+                -ms-filter: blur(4px);
+                filter: blur(4px);
+            }
+        }
+
+        @-moz-keyframes blur {
+            0% {
+                -webkit-filter: blur(0px);
+                -moz-filter: blur(0px);
+                -o-filter: blur(0px);
+                -ms-filter: blur(0px);
+                filter: blur(0px);
+            }
+
+            100% {
+                -webkit-filter: blur(4px);
+                -moz-filter: blur(4px);
+                -o-filter: blur(4px);
+                -ms-filter: blur(4px);
+                filter: blur(4px);
+            }
+        }
+
+        @-o-keyframes blur {
+            0% {
+                -webkit-filter: blur(0px);
+                -moz-filter: blur(0px);
+                -o-filter: blur(0px);
+                -ms-filter: blur(0px);
+                filter: blur(0px);
+            }
+
+            100% {
+                -webkit-filter: blur(4px);
+                -moz-filter: blur(4px);
+                -o-filter: blur(4px);
+                -ms-filter: blur(4px);
+                filter: blur(4px);
+            }
+        }
+
+        @keyframes blur {
+            0% {
+                -webkit-filter: blur(0px);
+                -moz-filter: blur(0px);
+                -o-filter: blur(0px);
+                -ms-filter: blur(0px);
+                filter: blur(0px);
+            }
+
+            100% {
+                -webkit-filter: blur(4px);
+                -moz-filter: blur(4px);
+                -o-filter: blur(4px);
+                -ms-filter: blur(4px);
+                filter: blur(4px);
+            }
+        }
+
+        @-webkit-keyframes blur-out {
+            0% {
+                -webkit-filter: blur(4px);
+                -moz-filter: blur(4px);
+                -o-filter: blur(4px);
+                -ms-filter: blur(4px);
+                filter: blur(4px);
+            }
+
+            100% {
+                -webkit-filter: blur(0px);
+                -moz-filter: blur(0px);
+                -o-filter: blur(0px);
+                -ms-filter: blur(0px);
+                filter: blur(0px);
+            }
+        }
+
+        @-moz-keyframes blur-out {
+            0% {
+                -webkit-filter: blur(4px);
+                -moz-filter: blur(4px);
+                -o-filter: blur(4px);
+                -ms-filter: blur(4px);
+                filter: blur(4px);
+            }
+
+            100% {
+                -webkit-filter: blur(0px);
+                -moz-filter: blur(0px);
+                -o-filter: blur(0px);
+                -ms-filter: blur(0px);
+                filter: blur(0px);
+            }
+        }
+
+        @-o-keyframes blur-out {
+            0% {
+                -webkit-filter: blur(4px);
+                -moz-filter: blur(4px);
+                -o-filter: blur(4px);
+                -ms-filter: blur(4px);
+                filter: blur(4px);
+            }
+
+            100% {
+                -webkit-filter: blur(0px);
+                -moz-filter: blur(0px);
+                -o-filter: blur(0px);
+                -ms-filter: blur(0px);
+                filter: blur(0px);
+            }
+        }
+
+        @keyframes blur-out {
+            0% {
+                -webkit-filter: blur(4px);
+                -moz-filter: blur(4px);
+                -o-filter: blur(4px);
+                -ms-filter: blur(4px);
+                filter: blur(4px);
+            }
+
+            100% {
+                -webkit-filter: blur(0px);
+                -moz-filter: blur(0px);
+                -o-filter: blur(0px);
+                -ms-filter: blur(0px);
+                filter: blur(0px);
+            }
+        }
+
+        .content {
+            width: 650px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+
+        span {
+            color: dimgray;
+        }
+
+        .pop-up {
+            position: fixed;
+            margin: auto;
+            width: 500px;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .box {
+            background-color: whitesmoke;
+            text-align: center;
+            margin: auto;
+            position: relative;
+            -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .close-button {
+            transition: all 0.5s ease;
+            position: absolute;
+            background-color: #FF9980;
+            padding: 1.5px 7px;
+            left: 0;
+            margin-left: -10px;
+            margin-top: -9px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            color: white;
+            -webkit-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: -3px 1px 6px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .close-button:hover {
+            background-color: tomato;
+            color: #fff;
+        }
+
+        h3 {
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #fff;
+            background-color: #FF704D;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="overlay" class="cover blur-in">
+        <div class="content">
+            <h1>The history or Lorem Ipsum</h1>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et, libero tempora quisquam voluptatem cupiditate ipsam minima necessitatibus aperiam delectus veniam reprehenderit, velit accusamus odio eaque praesentium aut soluta repellendus!
+            </span>
+        </div>
+    </div>
+    <div class="row pop-up">
+        <div class="box small-6 large-centered">
+            <a href="#" class="close-button">&#10006;</a>
+            <h3>lorem ipsum</h3>
+            <div class="colunas">
+                <div class="col1">
+                    <div class="header-popup" id="header1">
+                        <img src="../imagens/bloom.png" alt="bloom">
+                        <div class="info-plano">
+                            <h2 class="nome-plano">Bloom</h2>
+                            <p class="tipo-plano">Básico</p>
+                        </div>
+                    </div>
+                    <p>Você tem direito à uma consulta de 30 minutos por mês, além d etce etc etc</p>
+                    <p>Porém não terá acesso à tal tal tal ...</p>
+                </div>
+                <div class="col2">
+                    <h2>Formas de Pagamento</h2>
+                    <img src="" alt="" id="formas-pag">
+                    <div class="mensalidade">
+                        <p class="valor">R$140,00</p>
+                        <p class="mes">/mês</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+            document.addEventListener('DOMContentLoaded', function () {
+        const popup = document.querySelector('.pop-up');
+            const closeButton = document.querySelector('.close-button');
+            const overlay = document.getElementById('overlay');
+
+            popup.style.display = 'none'; // Esconde o popup inicialmente
+        setTimeout(() => popup.style.display = 'block', 1000); // Mostra após 1 segundo
+
+            closeButton.addEventListener('click', function (e) {
+                popup.style.display = 'none';
+            overlay.classList.remove('blur-in');
+            overlay.classList.add('blur-out');
+            e.stopPropagation();
+        });
+    });
+    </script>
+</body>
+
+</html>

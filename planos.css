@@ -139,18 +139,16 @@ div#mae {
 }
 
 #footer {
-    margin-top: 80px;
     background-color: #ffee95;
     padding: 10px;
-    
-    display: grid;
-    gap: 80px;
-
+    padding-top: 15px;
+    display: flex;
+    height: 150px;
     line-height: 1.5em;
 }
 
 #footer a {
-    color: black;
+    color: #575757;
     text-decoration: none;
 }
 
@@ -161,9 +159,11 @@ div#mae {
 #textos {
     grid-column: 1;
     margin-left: 50px;
+    width: 400px;
+    color: #575757;
 }
 
-#imagens {
+img#pagamento {
     grid-column: 2;
 }
 
@@ -173,9 +173,26 @@ div#mae {
     transition: 0.6s;
 }
 
+#pagamento {
+    margin-top: 15px;
+    width: 350px;
+    height: 90px;
+}
 
 
+.wave-container {
+    width: 100%;
+    line-height: 0;
+    position: absolute;
+    
+}
 
-
-
+svg {
+    display: block;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: auto;
+    /* Ajuste a altura conforme necessário */
+}
 
