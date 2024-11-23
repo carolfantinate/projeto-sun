@@ -19,11 +19,12 @@
 .colunas {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 8px;
 }
 
 .header-popup {
     border-radius: 20px;
-    width: 95%;
+    width: 90%;
     display: flex;
     background-color: lightblue;
     padding: 10px;
@@ -44,22 +45,30 @@
 
 .col1,
 .col2 {
-    width: 45%;
+    width: 43%;
 }
 
-.popups h2 {
-    font-size: 15px;
+h2 {
+    font-size: 1.4em;
 }
 
 .header-popup img {
     width: 75px;
 }
 
-#assinar {
-    width: 125px;
-    padding: 10px 7px;
+.h2-2 {
+    margin-top: 0;
+}
+
+.assinar {
+    padding: 7px 25px;
     border-radius: 50px;
     font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: red;
+    border: 2px solid darkred;
 }
 
 .valor {
@@ -68,18 +77,32 @@
     border-radius: 20px;
     width: 110px;
     font-weight: bold;
+    background-color: blue;
+}
+
+p.texto {
+    text-align: left;
+    padding-left: 7px;
 }
 
 .mes {
     font-size: 20px;
     padding-left: 7px;
+    margin-bottom: 30px;
 }
 
 .mensalidade {
+    margin-left: 7px;
     display: flex;
+    margin-top: 30px;
+    height: 60px;
+    justify-content: center;
     align-items: end;
 }
 
-
+#formas-pag{
+    width: 250px;
+}
 
 /*pop up bloom*/
+

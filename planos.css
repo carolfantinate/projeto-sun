@@ -2,7 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 :root {
     --cabeçalho: #fbd300;
@@ -46,7 +49,7 @@ header img {
 
 }
 
-header > nav {
+header>nav {
     text-align: right;
     align-self: center;
 }
@@ -57,7 +60,7 @@ header > nav {
     margin-right: 17px;
     background-color: #fef363;
     padding: 7px;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 
@@ -100,6 +103,14 @@ div.card-plano {
     padding-left: 5px;
 }
 
+.flora {
+    height: 80px;
+}
+
+h2.plano-flora {
+    margin-top: 0px;
+}
+
 .header-card .corpo {
     display: flex;
     justify-content: space-between;
@@ -117,23 +128,41 @@ div.card-plano {
     color: gray;
 }
 
+#preço-sun, #preço-bloom, #preço-free {
+    position: relative;
+    top: 12px;
+    text-align: center;
+}
+
 .header-card div.preço {
     font-size: 13px;
     margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.mes,
+.h2-preco {
+    margin: 0;
+}
+
+.mes {
+    padding-left: 5px;
+    font-size: 15px;
 }
 
 div.card-plano ul {
     padding-left: 20px;
 }
 
-div.card-plano ul li  {
+div.card-plano ul li {
     line-height: 2em;
     list-style: none;
 }
 
 
 div#mae {
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     margin-top: 40px
 }
@@ -168,7 +197,7 @@ img#pagamento {
 }
 
 .card-plano:hover {
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.242);
     transition: 0.6s;
 }
@@ -184,7 +213,7 @@ img#pagamento {
     width: 100%;
     line-height: 0;
     position: absolute;
-    
+
 }
 
 svg {
@@ -195,4 +224,3 @@ svg {
     height: auto;
     /* Ajuste a altura conforme necessário */
 }
-

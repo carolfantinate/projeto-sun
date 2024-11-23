@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUN - saúde mental</title>
     <link rel="stylesheet" href="planos.css">
-    <link rel="stylesheet" href="popups.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -38,7 +37,7 @@
                         <h2 class="plano">Free</h2>
                         <p class="tipo">Inicial</p>
                     </div>
-                    <div class="preço">
+                    <div class="preço" id="preço-free">
                         <h2>R$0,00</h2>
                     </div>
                 </div>
@@ -49,66 +48,46 @@
                 <li><i class="material-icons">close</i>Chats e grupos de apoio</li>
             </ul>
         </div>
-        <div class="popups popup1">
-            <div class="colunas">
-                <div class="col1">
-                    <div class="header-popup" id="header1">
-                        <img src="imagens/bloom.png" alt="bloom">
-                        <h2>Bloom</h2>
-                        <p>Básico</p>
+
+        <div class="card-plano item-2">
+            <a href="pop-ups/popup-bloom.html">
+                <div class="header-card">
+                    <img src="imagens/bloom.png" alt="bloom">
+                    <div class="corpo">
+                        <div>
+                            <h2 class="plano">Bloom</h2>
+                            <p class="tipo">Básico</p>
+                        </div>
+                        <div class="preço" id="preço-bloom">
+                            <h2 class="h2-preco">R$80,00</h2>
+                            <p class="mes">/mês</p>
+                        </div>
                     </div>
-                    <p>Você tem direito à uma consulta de 30 minutos por mês, além d etce etc etc</p>
-                    <p>Porém não terá acesso à tal tal tal ...</p>
                 </div>
-                <div class="col2">
-                    <h2>Formas de Pagamento</h2>
-                    <img src="" alt="" id="formas-pag">
-                    <div class="mensalidade">
-                        <p class="valor">R$140,00</p>
+                <ul>
+                    <li><i class="material-icons">check</i>1 consulta/mês</li>
+                    <li><i class="material-icons">check</i>30 minutos</li>
+                    <li><i class="material-icons">close</i>Chats e grupos de apoio</li>
+                </ul>
+            </a>
+        </div>
+
+        <div class="card-plano item-3">
+            <div class="header-card">
+                <img src="imagens/flora.png" alt="flora" class="flora">
+                <div class="corpo">
+                    <div>
+                        <h2 class=" plano plano-flora">Flora</h2>
+                        <p class="tipo">Essencial</p>
+                    </div>
+                    <div class="preço">
+                        <h2 class="h2-preco">R$140,00</h2>
                         <p class="mes">/mês</p>
                     </div>
                 </div>
             </div>
-            <button id="assinar">Assinar</button>
-        </div>
-
-       <div class="card-plano item-2">
-            <div class="header-card">
-                <img src="imagens/bloom.png" alt="bloom">
-                <div class="corpo">
-                    <div>
-                        <h2 class="plano">Bloom</h2>
-                        <p class="tipo">Básico</p>
-                    </div>
-                    <div class="preço">
-                        <h2>R$80,00</h2>
-                        <p>/mês</p>
-                    </div>
-                </div>
-            </div>
             <ul>
-                <li><i class="material-icons">check</i>1 consulta/mês</li>
-                <li><i class="material-icons">check</i>30 minutos</li>
-                <li><i class="material-icons">close</i>Chats e grupos de apoio</li>
-            </ul>
-        </div>
-
-        <div class="card-plano item-3" >
-            <div class="header-card">
-                <img src="imagens/flora.png" alt="flora">
-                <div class="corpo">
-                    <div>
-                        <h2 class="plano">Flora</h2>
-                        <p class="tipo">Essencial</p>
-                    </div>
-                    <div class="preço">
-                        <h2>R$140,00</h2>
-                        <p>/mês</p>
-                    </div>
-                </div>
-            </div>
-            <ul>
-                <li><i class="material-icons">check</i>2 consulta/mes</li>
+                <li><i class="material-icons">check</i>2 consulta/mês</li>
                 <li><i class="material-icons">check</i>40 minutos</li>
                 <li><i class="material-icons">check</i>Chats e grupos de apoio</li>
             </ul>
@@ -122,9 +101,9 @@
                         <h2 class="plano">Sunflower</h2>
                         <p class="tipo">Avançado</p>
                     </div>
-                    <div class="preço">
-                        <h2>R$260,00</h2>
-                        <p>/mês</p>
+                    <div class="preço" id="preço-sun">
+                        <h2 class="h2-preco">R$260,00</h2>
+                        <p class="mes">/mês</p>
                     </div>
                 </div>
             </div>
@@ -136,26 +115,24 @@
 
             </ul>
         </div>
-    </div>
 
-       
     </div>
     <div class="wave-container"></div>
-        <svg viewBox="0 0 2400 320" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#FFEE95" fill-opacity="1"
-                d="M0,256L60,245.3C120,235,240,213,360,218.7C480,224,600,256,720,261.3C840,267,960,245,1080,218.7C1200,192,1320,160,1440,170.7C1560,181,1680,235,1800,229.3C1920,224,2040,160,2160,128C2280,96,2400,96,2520,128L2640,160L2640,320L2520,320C2400,320,2280,320,2160,320C2040,320,1920,320,1800,320C1680,320,1560,320,1440,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-            </path>
-        </svg>
+    <svg viewBox="0 0 2400 320" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FFEE95" fill-opacity="1"
+            d="M0,256L60,245.3C120,235,240,213,360,218.7C480,224,600,256,720,261.3C840,267,960,245,1080,218.7C1200,192,1320,160,1440,170.7C1560,181,1680,235,1800,229.3C1920,224,2040,160,2160,128C2280,96,2400,96,2520,128L2640,160L2640,320L2520,320C2400,320,2280,320,2160,320C2040,320,1920,320,1800,320C1680,320,1560,320,1440,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+    </svg>
     </div>
     <section id="footer">
         <div id="textos">
             <p>Não aceitamos reembolso. Leia nossa política <br>
-            de pagamento clicando <a href="#">aqui</a></p>
+                de pagamento clicando <a href="#">aqui</a></p>
             <p>Aceitamos pagamento em PIX, cartões de <br> débito e de crédito.</p>
         </div>
 
         <img src="imagens/pagamento.png" id="pagamento">
-        
+
     </section>
 </body>
 

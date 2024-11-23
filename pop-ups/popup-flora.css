@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-popup {
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    background-color: #fef5ca;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tipo-plano, .nome-plano {
+    padding: 0;
+    margin: 0;
+}
+
+
+h2 {
+    font-size: 1.4em;
+}
+
+.header-popup img {
+    height: 80px;
+    width: 65px;
+}
+
+.h2-2 {
+    margin-top: 0;
+}
+
+.assinar {
+    padding: 7px 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #e9c300;
+    font-weight: bold;
+    background-color: #fef5ca;
+    border: 2px solid #e9c300;
+}
+
+.assinar:hover {
+    background-color: #fff1ae;
+    color: #e9c300;
+}
+
+.valor {
+    padding: 0px 13px 10px 15px;
+    font-size: 2.2em;
+    border-radius: 20px;
+    width: 110px;
+    font-weight: bold;
+    background-color: #fef5ca;
+    color: #e9c300;
+    font-family: "Katibeh", serif;
+}
+
+p.texto {
+    text-align: left;
+    padding-left: 7px;
+}
+
+.mes-popup {
+    font-size: 20px;
+    padding-left: 5px;
+    color: #e9c300;
+}
+
+.mensalidade {
+    margin-left: 7px;
+    display: flex;
+    margin-top: 30px;
+    height: 60px;
+    justify-content: center;
+    align-items: end;
+}
+
+#formas-pag{
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.linha {
+    width: 1px;
+    height: 260px;
+    background-color: #e9c300;
+}
+

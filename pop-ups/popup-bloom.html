@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="popups.css"> <!--modelo do popup-->
+    <link rel="stylesheet" href="popup-bloom.css">
+    <link rel="stylesheet" href="../estilos/navbar.css">
+    <link rel="stylesheet" href="../planos.css">
+    <link rel="stylesheet" href="base-popup.css"> <!--obrigatório-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div id="overlay" class="cover blur-in">
+        <!--Conteúdo do site-->
+        <div class="topo">
+            <p id="frase">Fique a vontade, aqui você é livre!</p>
+        </div>
+        <header>
+
+            <img src="../imagens/logo.png" alt="logo">
+            <nav>
+                <a href="../home.html" class="nav">Home</a>
+                <a href="../transtornos.html" class="nav">Transtornos</a>
+                <a href="#" id="atual">Planos</a>
+                <a href="../atendimento.html" class="nav">Atendimento</a>
+                <a href="../produtos.html" class="nav">Produtos</a>
+                <a href="../artigos.html" class="nav">Artigo</a>
+            </nav>
+        </header>
+
+        <p id="melhor">Escolha o melhor plano para você e suas necessidades!</p>
+
+        <div id="mae">
+            <div class="card-plano item-1">
+                <div class="header-card">
+                    <img src="../imagens/semente.png" alt="free">
+                    <div class="corpo">
+                        <div>
+                            <h2 class="plano">Free</h2>
+                            <p class="tipo">Inicial</p>
+                        </div>
+                        <div class="preço" id="preço-free">
+                            <h2>R$0,00</h2>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><i class="material-icons">check</i>1 consulta</li>
+                    <li><i class="material-icons">check</i>40 minutos</li>
+                    <li><i class="material-icons">close</i>Chats e grupos de apoio</li>
+                </ul>
+            </div>
+
+            <div class="card-plano item-2">
+                <a href="popup-bloom.html">
+                    <div class="header-card">
+                        <img src="../imagens/bloom.png" alt="bloom">
+                        <div class="corpo">
+                            <div>
+                                <h2 class="plano">Bloom</h2>
+                                <p class="tipo">Básico</p>
+                            </div>
+                            <div class="preço" id="preço-bloom">
+                                <h2 class="h2-preco">R$80,00</h2>
+                                <p class="mes">/mês</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><i class="material-icons">check</i>1 consulta/mês</li>
+                        <li><i class="material-icons">check</i>30 minutos</li>
+                        <li><i class="material-icons">close</i>Chats e grupos de apoio</li>
+                    </ul>
+                </a>
+            </div>
+
+            <div class="card-plano item-3">
+                <a href="popup-flora.html">
+                    <div class="header-card">
+                        <img src="../imagens/flora.png" alt="flora" class="flora">
+                        <div class="corpo">
+                            <div>
+                                <h2 class=" plano plano-flora">Flora</h2>
+                                <p class="tipo">Essencial</p>
+                            </div>
+                            <div class="preço">
+                                <h2 class="h2-preco">R$140,00</h2>
+                                <p class="mes">/mês</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><i class="material-icons">check</i>2 consulta/mês</li>
+                        <li><i class="material-icons">check</i>40 minutos</li>
+                        <li><i class="material-icons">check</i>Chats e grupos de apoio</li>
+                    </ul>
+                </a>
+            </div>
+
+            <div class="card-plano item-4">
+                <div class="header-card">
+                    <img src="../imagens/florzinha 04.png" alt="sun">
+                    <div class="corpo">
+                        <div>
+                            <h2 class="plano">Sunflower</h2>
+                            <p class="tipo">Avançado</p>
+                        </div>
+                        <div class="preço" id="preço-sun">
+                            <h2 class="h2-preco">R$260,00</h2>
+                            <p class="mes">/mês</p>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><i class="material-icons">check</i>4 consulta/mes</li>
+                    <li><i class="material-icons">check</i>40 minutos</li>
+                    <li><i class="material-icons">check</i>Chats e grupos de apoio</li>
+                    <li><i class="material-icons">check</i>Calendário emocional</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------------------->
+    <div class="row pop-up">
+        <div class="box small-6 large-centered">
+            <a href="#" class="close-button">&#10006;</a>
+            <h1>Escolher plano</h1>
+            <div class="colunas">
+                <div class="col1">
+                    <div class="header-popup" id="header1">
+                        <img src="../imagens/bloom.png" alt="bloom">
+                        <div class="info-plano">
+                            <h2 class="nome-plano">Bloom</h2>
+                            <p class="tipo-plano">Básico</p>
+                        </div>
+                    </div>
+                    <p class="texto">Você tem direito à uma consulta de 30 minutos por mês, além d etce etc etc</p>
+                    <p class="texto">Porém não terá acesso à tal tal tal ...</p>
+                </div>
+                <div class="linha"></div>
+                <div class="col2">
+                    <h2 class="h2-2">Formas de <br> Pagamento</h2>
+                    <img src="../imagens/formas-pag-bloom.png" alt="" id="formas-pag">
+                    <div class="mensalidade">
+                        <p class="valor">R$140,00</p>
+                        <p class="mes-popup">/mês</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="assinar">Assinar</a>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const popup = document.querySelector('.pop-up');
+            const closeButton = document.querySelector('.close-button');
+            const overlay = document.getElementById('overlay');
+
+            popup.style.display = 'none'; // Esconde o popup inicialmente
+            setTimeout(() => popup.style.display = 'block', 1000); // Mostra após 1 segundo
+
+            closeButton.addEventListener('click', function (e) {
+                popup.style.display = 'none';
+                overlay.classList.remove('blur-in');
+                overlay.classList.add('blur-out');
+                e.stopPropagation();
+            });
+        });
+    </script>
+</body>
+
+</html>
