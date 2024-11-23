@@ -41,7 +41,7 @@ header {
     display: flex;
     justify-content: space-around;
     padding-top: 45px;
-    padding-bottom: 45px;
+    padding-bottom: 0px;
 }
 
 header img {
@@ -164,7 +164,7 @@ div.card-plano ul li {
 div#mae {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 40px
+    margin-top: 45px
 }
 
 #footer {
@@ -201,6 +201,8 @@ img#pagamento {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.242);
     transition: 0.6s;
 }
+
+.card-plano:
 
 #pagamento {
     margin-top: 15px;
