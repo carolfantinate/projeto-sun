@@ -6,212 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Especialista</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-        body {
-            font-family: "Open Sans", sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-evenly;
-            height: 100vh;
-            align-items: center;
-        }
-
-        p {
-            line-height: 1.5em;
-        }
-
-        #pag {
-            line-height: normal;
-            margin-bottom: 0;
-            text-align: right;
-            color: #a0a0a0;
-            margin-top: 7px;
-        }
-
-        .logar {
-            font-size: 0.9em;
-
-
-            &#logar-user>a {
-                color: #fbd300;
-                text-decoration: none;
-            }
-
-            &#logar-esp>a {
-                color: #2092db;
-                text-decoration: none;
-            }
-        }
-
-        /* -------------Conversa--------------
-Bea: vou gravar aqui
- 
-Carol: é nois
-*/
-
-        #textos {
-            width: 500px;
-            text-align: justify;
-            padding: 20px;
-        }
-
-        input#li {
-            width: 25px;
-            margin-right: 15px;
-        }
-
-        p#checkbox {
-            display: flex;
-            align-items: center;
-        }
-
-        .meio {
-            text-align: center;
-            margin: 0;
-            padding: 5px;
-        }
-
-        h2 {
-            font-size: 2em;
-            color: #2092db;
-        }
-
-        a {
-            text-decoration: none;
-            color: #2092db;
-        }
-
-        a:hover {
-            font-weight: bold;
-        }
-
-        main {
-            background-color: #f5f5f5;
-            padding: 30px 30px 10px 30px;
-            width: 400px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 0px 10px rgba(97, 95, 74, 0.37);
-        }
-
-        #voltar {
-            color: #a0a0a0;
-            float: left;
-        }
-
-        img {
-            width: 120px;
-        }
-
-        .btn {
-            width: 145px;
-            height: 45px;
-            padding: 5px;
-            border: 2px solid #2092db;
-            border-radius: 50px;
-            background-color: #80cbfb;
-
-            margin-top: 15px;
-
-            color: #2092db;
-            font-weight: bolder;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
-
-        .btn:hover {
-            background-color: #77b9e1;
-            color: aliceblue;
-            transition: 0.3s;
-        }
-
-        .logar {
-            text-align: right;
-        }
-
-        /* Esconde o input original */
-        .file-upload input[type="file"] {
-            display: none;
-        }
-
-        /* Estiliza o label como um botão */
-        .file-label {
-            padding: 15px;
-            height: 50px;
-            border-radius: 20px;
-            background-color: #e2dada;
-            color: #9a9a9a;
-            font-weight: bold;
-            margin-bottom: 9.5px;
-            font-size: 1em;
-            cursor: pointer;
-            text-align: center;
-            transition: background-color 0.3s;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .file-label:hover {
-            background-color: #d4d3d3;
-        }
-
-        /* Estilo para o nome do arquivo */
-        .file-name {
-            font-size: 14px;
-            color: #9a9a9a;
-        }
-
-        #anexo {
-            font-size: 23px;
-        }
-
-        textarea {
-            width: 93%;
-            height: 80px;
-            padding: 12px;
-            font-size: 16px;
-            background-color: #e2dada;
-            color: #9a9a9a;
-            border: 1px solid #ddd;
-            border-radius: 18px;
-            font-family: "Open Sans", sans-serif;
-            resize: none;
-        }
-
-        textarea:hover {
-            background-color: #d4d3d3;
-        }
-        
-        /* Efeito ao focar no textarea */
-        textarea:focus {
-            outline: none;
-            background-color: #e2dada;
-        }
-
-        /* Placeholder estilizado */
-        textarea::placeholder {
-            font-weight: bold;
-            color: #9a9a9a;
-        }
-
-        /* Rolagem personalizada */
-        textarea::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        textarea::-webkit-scrollbar-track {
-            background-color: #dee2da;
-            border-radius: 8px;
-        }
-
-        textarea::-webkit-scrollbar-thumb {
-            background-color: #9f9f9f;
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/cad-esp2.css">
 </head>
 
 <body>
@@ -234,18 +29,17 @@ Carol: é nois
         <main>
             <a href="cad-esp1.html"><i id="voltar" class="material-icons" id="icon-search">arrow_back_ios</i></a>
             <img src="../imagens/logo.png" alt="logo">
-            <h1>Cadastro de Especialista</h1>
+            <h1>Cadastre-se!</h1>
             <p>Preencha os dados necessários para utilizar a plataforma como especialista.
             </p>
-            <form action=""> <!--login esp-->
+            <form action="../logins/login-esp.html"> <!--login esp-->
 
                 <div class="file-upload">
                     <label for="file-input" class="file-label">
-                        <span>Anexar currículo (PDF) </span>
+                        <span id="file-name">Anexar currículo (PDF) </span>
                         <i class="material-icons" id="anexo">attach_file</i>
                         <input type="file" id="file-input" accept=".pdf">
                     </label>
-                    <!--<span id="file-name" class="file-name">Nenhum arquivo selecionado</span>-->
                 </div>
 
                 <textarea name="area" id="area" placeholder="Deixar comentário"></textarea> <br>
@@ -254,9 +48,31 @@ Carol: é nois
             </form>
             <p id="pag">2/2</p>
         </main>
-        <p class="logar">Se você já possui uma conta, clique <a href="#">aqui</a></p>
+        <p class="logar">Se você já possui uma conta, clique <a href="../logins/login-esp.html">aqui</a></p>
     </div>
+    <div class="wave-container">
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 600" preserveAspectRatio="none">
+            <path fill="#bbe5ff" fill-opacity="1"
+                d="M0,320C120,240,240,160,360,160C480,160,600,240,720,300C840,360,960,400,1080,320C1200,240,1320,80,1440,0L1440,600L0,600Z">
+            </path>
+        </svg>
+    </div>
+    <div class="fundo-onda"></div>
 
+    <script>
+        const fileInput = document.getElementById("file-input");
+        const fileNameSpan = document.getElementById("file-name");
+
+        fileInput.addEventListener("change", () => {
+            const file = fileInput.files[0]; // Obtém o primeiro arquivo selecionado
+            if (file) {
+                fileNameSpan.textContent = file.name; // Atualiza o texto com o nome do arquivo
+            } else {
+                fileNameSpan.textContent = "Anexar currículo (PDF)"; // Texto padrão caso não haja arquivo
+            }
+        });
+
+    </script>
 </body>
 
 </html>

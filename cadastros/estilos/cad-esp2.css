@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+#pag {
+    line-height: normal;
+    margin-bottom: 0;
+    text-align: right;
+    color: #a0a0a0;
+    margin-top: 7px;
+}
+
+.logar {
+    font-size: 0.9em;
+
+
+    &#logar-user>a {
+        color: #fbd300;
+        text-decoration: none;
+    }
+
+    &#logar-esp>a {
+        color: #2092db;
+        text-decoration: none;
+    }
+}
+
+#textos {
+    width: 500px;
+    text-align: justify;
+    padding: 20px;
+}
+
+input#li {
+    width: 25px;
+    margin-right: 15px;
+}
+
+p#checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.meio {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #2092db;
+}
+
+a {
+    text-decoration: none;
+    color: #2092db;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+main {
+    background-color: #f5f5f5;
+    padding: 30px 30px 10px 30px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(97, 95, 74, 0.37);
+}
+
+#voltar {
+    color: #a0a0a0;
+    float: left;
+}
+
+img {
+    width: 120px;
+}
+
+.btn {
+    width: 145px;
+    height: 45px;
+    padding: 5px;
+    border: 2px solid #2092db;
+    border-radius: 50px;
+    background-color: #80cbfb;
+
+    margin-top: 15px;
+
+    color: #2092db;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.btn:hover {
+    background-color: #77b9e1;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+.logar {
+    text-align: right;
+}
+
+/* Esconde o input original */
+.file-upload input[type="file"] {
+    display: none;
+}
+
+/* Estiliza o label como um botão */
+.file-label {
+    padding: 15px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #e2dada;
+    color: #9a9a9a;
+    font-weight: bold;
+    margin-bottom: 9.5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.file-label:hover {
+    background-color: #d4d3d3;
+}
+
+#file-name {
+    color: #9a9a9a;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#anexo {
+    font-size: 23px;
+}
+
+textarea {
+    width: 93%;
+    height: 80px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #e2dada;
+    color: #9a9a9a;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    font-family: "Open Sans", sans-serif;
+    resize: none;
+}
+
+textarea:hover {
+    background-color: #d4d3d3;
+}
+
+/* Efeito ao focar no textarea */
+textarea:focus {
+    outline: none;
+    background-color: #e2dada;
+}
+
+/* Placeholder estilizado */
+textarea::placeholder {
+    font-weight: bold;
+    color: #9a9a9a;
+}
+
+/* Rolagem personalizada */
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: #dee2da;
+    border-radius: 8px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #9f9f9f;
+    border-radius: 8px;
+}
+
+.wave-container {
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.fundo-onda {
+    position: absolute;
+    bottom: 0;
+    top: 580px;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 115px;
+    background-color: #bbe5ff;
+}
