@@ -196,23 +196,24 @@
     margin-top: -9px;
     border-radius: 50%;
     background-color: #fff8d8;
-    color: #ecd049;
-    border: 2px solid #ecd049;
+    color: #bf997e;
+    border: 2px solid #bf997e;
     -webkit-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: -4px -2px 6px 0px rgba(0, 0, 0, 0.1);
     box-shadow: -3px 1px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
 .close-button:hover {
-    background-color: #ecd876;
-    color: #fef5ca;
-    border: 2px solid #fef5ca;
+    background-color: #efde87;
+    color: #bf997e;
+    border: 2px solid #bf997e;
+    ;
 }
 
 h1 {
     text-align: center;
     padding: 0px 0px 15px 0px;
-    color: #ecd049;
+    color: #a17a5e;
     background-color: #fef5ca;
     border-radius: 20px 20px 0px 0px;
     font-size: 3em;

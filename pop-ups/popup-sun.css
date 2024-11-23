@@ -9,7 +9,8 @@
     border-radius: 20px;
     width: 90%;
     display: flex;
-    background-color: #ffecec;
+    background-color: #fef5ca;
+    border: 2px solid #bf997e;
     padding: 10px;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +27,7 @@ h2 {
 }
 
 .header-popup img {
-    width: 75px;
+    width: 65px;
 }
 
 .h2-2 {
@@ -38,15 +39,16 @@ h2 {
     border-radius: 50px;
     font-size: 16px;
     text-decoration: none;
-    color: #f19292;
+    color: #bf997e;
     font-weight: bold;
-    background-color: #ffc3c3;
-    border: 2px solid #f19292;
+    background-color: #fef5ca;
+    border: 2px solid #bf997e;
+
 }
 
 .assinar:hover {
-    background-color: #edbaba;
-    color: #dc8585;
+    background-color: #fff1ae;
+    color: #bf997e;
 }
 
 .valor {
@@ -55,8 +57,10 @@ h2 {
     border-radius: 20px;
     width: 110px;
     font-weight: bold;
-    background-color: #ffecec;
-    color: #f19292;
+    background-color: #fef5ca;
+    color: #e9c300;
+    border: 2px solid #bf997e;
+
     font-family: "Katibeh", serif;
 }
 
@@ -68,7 +72,7 @@ p.texto {
 .mes-popup {
     font-size: 20px;
     padding-left: 5px;
-    color: #f19292;
+    color: #e9c300;
 }
 
 .mensalidade {
@@ -88,6 +92,6 @@ p.texto {
 .linha {
     width: 1px;
     height: 260px;
-    background-color: #ffc3c3e6;
+    background-color: #bf997e;
 }
 
