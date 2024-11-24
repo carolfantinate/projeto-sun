@@ -19,6 +19,7 @@ body {
     width: 350px;
     margin: 30px 40px;
     position: absolute;
+    z-index: 2;
 }
 
 .logar {
@@ -68,7 +69,7 @@ main {
     margin: auto;
     padding: 30px 30px 10px 30px;
     width: 400px;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(97, 95, 74, 0.37);
 
@@ -82,6 +83,13 @@ main {
 
 img {
     width: 120px;
+}
+
+h1 {
+    font-family: "Katibeh", serif;
+    letter-spacing: 0.7px;
+    font-size: 3.3em;
+    margin: 0px;
 }
 
 .form-control {

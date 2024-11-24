@@ -57,10 +57,8 @@ function checkInputs() {
     })
 
     if(formIsValid) {
-        window.location.href = 'cad-user2.html';
-    } else {
-        console.log('refaça')
-    }
+        window.location.href = 'cad-user2-verificado.html';  
+    } 
 }
 
 function setErrorFor(input, message) {

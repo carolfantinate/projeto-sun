@@ -11,10 +11,10 @@
 
 <body>
     <div class="paragrafos">
-        <p class="logar" id="logar-user">Já possui uma conta usuário? <br>Clique <a href="#">aqui</a> para logar</p>
-        <!--Linkar com login usuário-->
-        <p class="logar" id="logar-esp">Já possui uma conta especialista? <br> Clique <a href="#">aqui</a> para logar
-        </p> <!--Linkar com login especialista-->
+        <p class="logar" id="logar-user">Já possui uma conta usuário? <br>Clique <a href="../logins/login.html">aqui</a>
+            para logar</p>
+        <p class="logar" id="logar-esp">Já possui uma conta especialista? <br> Clique <a
+                href="../logins/login-esp.html">aqui</a> para logar</p>
     </div>
 
     <div id="tela">
@@ -26,12 +26,16 @@
             <img src="../imagens/florzinha-1.png" class="flor5">
             <img src="../imagens/florzinha 04.png" class="flor6">
             <img src="../imagens/florzinha 03.png" class="flor7">
-            <a href="cad-user1.html"><i id="voltar" class="material-icons" id="icon-search">arrow_back_ios</i></a>
+
+            <i id="voltar" class="material-icons" onclick="voltar()">arrow_back_ios</i>
+
             <img src="../imagens/logo.png" alt="logo">
+
             <h1>Cadastre-se!</h1>
             <p>Acesse nossos <a href="#" id="termos">termos de privacidade</a> e entenda o <br> porquê solicitamos as
                 seguintes informações.
             </p>
+
             <form action="#">
                 <input type="number" name="idade" id="idade" placeholder="Idade" min="12" max="110" required> <br>
                 <p class="p-left">Você já foi diagnosticado com algum <br> transtorno mental?</p>
@@ -44,18 +48,17 @@
                     <input type="radio" class="radio" name="opcao" id="opn" value="N">
                     <label for="opn">Não</label>
                 </div>
-    </div>
-    <p class="p-left">Se sim, qual ou quais?</p>
-    <input type="text" name="transt" id="transt" list="lsttranst">
-    <datalist id="lsttranst">
-        <option value="Ansidedade"></option>
-        <option value="Depressão"></option>
-        <option value="Bulimia"></option>
-    </datalist>
-    <a href="#" class="btn">Cadastrar</a>
-    </form>
-    <p id="pag">2/2</p>
-    </main>
+                <p class="p-left">Se sim, qual ou quais?</p>
+                <input type="text" name="transt" id="transt" list="lsttranst">
+                <datalist id="lsttranst">
+                    <option value="Ansidedade"></option>
+                    <option value="Depressão"></option>
+                    <option value="Bulimia"></option>
+                </datalist>
+                <a href="#" class="btn">Cadastrar</a>
+            </form>
+            <p id="pag">2/2</p>
+        </main>
     </div>
     <div class="wave">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -66,6 +69,19 @@
     </div>
     <div class="fundo-onda"></div>
 
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Alterando a URL sem recarregar a página
+            history.replaceState(null, '', '/etapa-oculta'); // Aqui você coloca a URL que deseja mostrar
+            console.log('URL alterada para:', window.location.href); // Verifique no console se a URL mudou
+        });
+
+        function voltar() {
+            history.back();
+        }
+    </script>
 </body>
 
 </html>

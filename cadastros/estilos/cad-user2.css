@@ -22,6 +22,7 @@ p {
     width: 350px;
     margin: 30px 40px;
     position: absolute;
+    z-index: 2;
 }
 
 .logar {
@@ -79,8 +80,19 @@ main {
     float: left;
 }
 
+i:hover {
+    cursor: pointer;
+}
+
 img {
     width: 120px;
+}
+
+h1 {
+    font-family: "Katibeh", serif;
+    letter-spacing: 0.7px;
+    font-size: 3.3em;
+    margin: 0px;
 }
 
 a#termos {
@@ -177,19 +189,19 @@ input.radio {
 
 .flor1 {
     width: 160px;
-    top: 380px;
+    top: 435px;
     left: -110px;
 }
 
 .flor2 {
     width: 50px;
-    top: 510px;
+    top: 555px;
     left: 55px;
 }
 
 .flor3 {
     width: 70px;
-    top: 300px;
+    top: 340px;
     left: -40px;
 }
 
