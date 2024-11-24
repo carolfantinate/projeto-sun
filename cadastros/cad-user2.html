@@ -72,11 +72,10 @@
 
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Alterando a URL sem recarregar a página
-            history.replaceState(null, '', '/etapa-oculta'); // Aqui você coloca a URL que deseja mostrar
-            console.log('URL alterada para:', window.location.href); // Verifique no console se a URL mudou
-        });
+        if (sessionStorage.getItem('formularioConcluido') !== 'true') {
+            alert('Você precisa preencher o formulário anterior.');
+            window.location.href = 'pagina1.html'; // Redireciona de volta ao formulário
+        }
 
         function voltar() {
             history.back();

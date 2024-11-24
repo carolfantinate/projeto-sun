@@ -57,7 +57,8 @@ function checkInputs() {
     })
 
     if(formIsValid) {
-        window.location.href = 'cad-user2-verificado.html';  
+        sessionStorage.setItem('formularioConcluido', 'true');
+        window.location.href = 'cad-user2.html';  
     } 
 }
 
