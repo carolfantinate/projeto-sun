@@ -74,6 +74,7 @@ a:hover {
 }
 
 main {
+    position: relative;
     background-color: #f5f5f5;
     padding: 30px 30px 10px 30px;
     width: 400px;
@@ -225,4 +226,57 @@ textarea::-webkit-scrollbar-thumb {
     width: 100%;
     height: 115px;
     background-color: #bbe5ff;
+}
+
+.flor1, .flor2, .flor3, .flor4, .flor5, .flor6, .flor7 {
+    position: absolute;
+}
+
+.flor1 {
+    width: 160px;
+    top: 380px;
+    left: -110px;
+}
+
+.flor2 {
+    width: 50px;
+    top: 510px;
+    left: 55px;
+}
+
+.flor3 {
+    width: 70px;
+    top: 300px;
+    left: -40px;
+}
+
+.flor4 {
+    width: 190px;
+    top: 190px;
+    right: -160px;
+}
+
+.flor5 {
+    width: 60px;
+    top: 380px;
+    right: -30px;
+}
+
+.flor6 {
+    width: 80px;
+    top: 100px;
+    right: -50px;
+}
+
+.flor7 {
+    width: 45px;
+    top: -20px;
+    right: 75px;
+}
+
+h1 {
+    font-family: "Katibeh", serif;
+    letter-spacing: 1px;
+    font-size: 3em;
+    margin: 0px;
 }

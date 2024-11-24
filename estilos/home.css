@@ -151,9 +151,25 @@ p#fim {
     line-height: 1.35em;
 }
 
-.fundo-onda {
-    width: 100%;
-    height: 100px;
-    background-color: #42791f;
+.container-onda-verde {
+    width: 100vw;
+    height: 284px;
     margin: 0;
+    padding: 0;
+}
+
+/*img.onda-verde {
+    width: 100vw;
+    background-repeat: repeat-x;
+    margin: 0;
+    background-size: cover;
+}*/
+
+.pedaço-verde {
+    position: absolute;
+    color: #791f1f;
+    width: 100vw;
+    height: 10px;
+    bottom: 0;
+    z-index: 2;
 }
