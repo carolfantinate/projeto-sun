@@ -32,13 +32,49 @@
             <h1>Cadastre-se!</h1>
             <p>Agora insira os seus dados para acessar todos os <br> conteúdos disponíveis na plataforma.
             </p>
-            <form action="cad-user2.html">
-                <input type="text" name="nome" id="nome" placeholder="Nome" required> <br>
-                <input type="email" name="email" id="email" placeholder="E-mail" required> <br>
-                <input type="password" name="senha" id="senha" placeholder="Senha" required minlength="8"> <br>
-                <input type="password" name="c-senha" id="c-senha" placeholder="Confirmar senha" required minlength="8">
-                <br>
-                <button class="btn" id="seguir">Seguir</button>
+            <form id="form" class="form" method="post">
+
+                <div class="form-control">
+                    <input 
+                    type="text"
+                    id="nome" 
+                    placeholder="Nome">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>Mensagem de erro</small>
+                </div> 
+                
+
+                <div class="form-control">
+                    <input 
+                    type="text" 
+                    id="email" placeholder="E-mail">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <input
+                    type="password"
+                    id="senha"
+                    placeholder="Senha">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <input
+                    type="password"
+                    id="c-senha" placeholder="Confirmar senha">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <button type="submit" class="btn" id="seguir">Seguir</button>
+
             </form>
             <p id="pag">1/2</p>
         </main>
@@ -51,6 +87,10 @@
         </svg>
     </div>
     <div class="fundo-onda"></div>
+
+    <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
+
+    <script src="forms.js"></script>
 </body>
 
 </html>

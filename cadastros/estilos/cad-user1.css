@@ -1,204 +1,255 @@
 @import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-        body {
-            font-family: "Open Sans", sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-        }
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
 
-        #pag {
-            line-height: normal;
-            margin-bottom: 0;
-            text-align: right;
-            color: #a0a0a0;
-            margin-top: 7px;
-        }
+#pag {
+    line-height: normal;
+    margin-bottom: 0;
+    text-align: right;
+    color: #a0a0a0;
+    margin-top: 7px;
+}
 
-        .paragrafos {
-            width: 350px;
-            margin: 30px 40px;
-            position: absolute;
-        }
+.paragrafos {
+    width: 350px;
+    margin: 30px 40px;
+    position: absolute;
+}
 
-        .logar {
-            font-size: 0.9em;
-
-
-            &#logar-user>a {
-                color: #fbd300;
-                text-decoration: none;
-            }
-
-            &#logar-esp>a {
-                color: #2092db;
-                text-decoration: none;
-            }
-        }
-
-        p {
-            line-height: 1.5em;
-        }
-
-        a:hover {
-            font-weight: bold;
-        }
-
-        #logar {
-            font-size: 0.9em;
-            margin: 40px;
-        }
-
-        #logar>a {
-            color: #fbd300;
-            text-decoration: none;
-        }
-
-        #tela {
-            width: 100vw;
-            height: 100vh;
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        main {
-            background-color: #f5f5f5;
-            margin: auto;
-            padding: 30px 30px 10px 30px;
-            width: 400px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 0px 10px rgba(97, 95, 74, 0.37);
-
-            position: relative;
-        }
-
-        #voltar {
-            color: #a0a0a0;
-            float: left;
-        }
-
-        img {
-            width: 120px;
-        }
+.logar {
+    font-size: 0.9em;
 
 
-        input {
-            width: 350px;
-            height: 30px;
-            padding: 5px;
-            border: 0px;
-            border-radius: 50px;
-            background-color: #e2dada;
-            margin-bottom: 9.5px;
-            padding-left: 15px;
-            font-size: 1em;
-        }
+    &#logar-user>a {
+        color: #fbd300;
+        text-decoration: none;
+    }
 
-        input::placeholder {
-            font-weight: bold;
-            color: #a0a0a0;
-        }
+    &#logar-esp>a {
+        color: #2092db;
+        text-decoration: none;
+    }
+}
 
-        input:hover {
-            background-color: #d4d3d3;
-        }
+p {
+    line-height: 1.5em;
+}
 
-        input:focus {
-            outline: 0;
-        }
+a:hover {
+    font-weight: bold;
+}
 
-        .mae {
-            display: flex;
-            justify-content: space-evenly;
-        }
+#logar {
+    font-size: 0.9em;
+    margin: 40px;
+}
 
-        .btn {
-            width: 145px;
-            height: 45px;
-            padding: 5px;
-            border: 2px solid #bda211;
-            border-radius: 50px;
-            background-color: #ffe55f;
+#logar>a {
+    color: #fbd300;
+    text-decoration: none;
+}
 
-            margin-top: 15px;
+#tela {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-            color: #bda211;
-            font-weight: bolder;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
+main {
+    background-color: #f5f5f5;
+    margin: auto;
+    padding: 30px 30px 10px 30px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(97, 95, 74, 0.37);
 
-        .btn:hover {
-            background-color: #ecd45be3;
-        }
+    position: relative;
+}
 
-        .flor1, .flor2, .flor3, .flor4, .flor5, .flor6, .flor7 {
-            position: absolute;
-        }
-        
-        .flor1 {
-            width: 160px;
-            top: 380px;
-            left: -110px;
-        }
-        
-        .flor2 {
-            width: 50px;
-            top: 510px;
-            left: 55px;
-        }
-        
-        .flor3 {
-            width: 70px;
-            top: 300px;
-            left: -40px;
-        }
-        
-        .flor4 {
-            width: 190px;
-            top: 190px;
-            right: -150px;
-        }
-        
-        .flor5 {
-            width: 80px;
-            top: 370px;
-            right: -50px;
-        }
-        
-        .flor6 {
-            width: 80px;
-            top: 100px;
-            right: -50px;
-        }
-        
-        .flor7 {
-            width: 45px;
-            top: -20px;
-            right: 75px;
-        }
+#voltar {
+    color: #a0a0a0;
+    float: left;
+}
 
-        .wave svg {
-            position: absolute;
-            z-index: -1;
-            top: 250px;
-            bottom: 0;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .fundo-onda {
-            position: absolute;
-            bottom: 0;
-            top: 580px;
-            z-index: -1;
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            height: 115px;
-            background-color: #fff9c4;
-        }
+img {
+    width: 120px;
+}
+
+.form-control {
+    position: relative;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+
+.form-control input {
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 50px;
+    background-color: #e2dada;
+    margin-bottom: 9.5px;
+    padding-left: 15px;
+    font-size: 1em;
+}
+
+.form-control i {
+    position: absolute;
+    top: 14px;
+    right: 25px;
+    visibility: hidden;
+}
+
+.form-control small {
+    position: absolute;
+    top: 44px;
+    left: 22px;
+    visibility: hidden;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: #a0a0a0;
+}
+
+input:hover {
+    background-color: #d4d3d3;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.mae {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    width: 145px;
+    height: 45px;
+    padding: 5px;
+    border: 2px solid #bda211;
+    border-radius: 50px;
+    background-color: #ffe55f;
+
+    margin-top: 15px;
+
+    color: #bda211;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.btn:hover {
+    background-color: #ecd45be3;
+}
+
+.flor1,
+.flor2,
+.flor3,
+.flor4,
+.flor5,
+.flor6,
+.flor7 {
+    position: absolute;
+}
+
+.flor1 {
+    width: 165px;
+    top: 450px;
+    left: -110px;
+}
+
+.flor2 {
+    width: 50px;
+    top: 580px;
+    left: 55px;
+}
+
+.flor3 {
+    width: 70px;
+    top: 360px;
+    left: -40px;
+}
+
+.flor4 {
+    width: 190px;
+    top: 190px;
+    right: -150px;
+}
+
+.flor5 {
+    width: 80px;
+    top: 370px;
+    right: -50px;
+}
+
+.flor6 {
+    width: 80px;
+    top: 100px;
+    right: -50px;
+}
+
+.flor7 {
+    width: 45px;
+    top: -20px;
+    right: 75px;
+}
+
+.wave svg {
+    position: absolute;
+    z-index: -1;
+    top: 250px;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.fundo-onda {
+    position: absolute;
+    bottom: 0;
+    top: 580px;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 115px;
+    background-color: #fff9c4;
+}
+
+/*Error and success*/
+
+.form-control.success input {
+    border: 2px solid #2db465;
+}
+
+.form-control.success i.fa-circle-check { 
+    color:#2db465;
+    visibility: visible;
+}
+
+.form-control.error input {
+    border: 2px solid #c84537;
+}
+
+.form-control.error i.fa-circle-exclamation { 
+    color:#c84537;
+    visibility: visible;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #c84537;
+}
