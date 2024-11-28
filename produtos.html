@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUN - saúde mental</title>
+   <link rel="stylesheet" href="navbar.css">
+   <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+    <div class="topo">
+        <p id="frase">Fique a vontade, aqui você é livre!</p>
+    </div>
+    <header>
+
+        <img src="imagens/logo.png" alt="logo">
+        <nav>
+            <a href="home.html" class="nav">Home</a>
+            <a href="transtornos.html" class="nav">Transtornos</a>
+            <a href="planos.html" class="nav">Planos</a>
+            <a href="atendimento.html" class="nav">Atendimento</a>
+            <a href="#" id = "atual">Produtos</a>
+            <a href="#" class="nav">Artigo</a>
+        </nav>
+    </header>
+    <div class="par1"><p>Buscando levar os cuidados e atenção do SUN para a sua casa, <br> disponibilizamos produtos personalizados para ampliar suas <br> capacidades de autoconhecimento e autocuidado.
+        Pretendemos <br> incentivar a autoanálise e a percepção das <br> sensações e  sentimentos que vivemos durante o dia-a-dia com o <br> intuito de permitir que os usuários vejam, reconheçam e se <br> atentem ao seu estado emocional.
+        Por isso, oferecemos nosso <br> calendário inteligente para você que <br> se identifica com a nossa proposta e quer ter um item útil, bonito <br> e que promove sua inteligência emocional.</p></div>
+    <div class="par2"><p>Se você se interessou ou deseja entender melhor sua <br> saúde psicológica e acredita que nossos produtos <br> podem ser úteis, clique no botão abaixo.</p></div>
+    <button id="compre">Adquira o seu!</button>
+    <h2>Dê um olhada em nossos itens!</h2>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="slide active">
+                <img src="C:\Users\Aluno\Documents\sun" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="imagens/meh.png" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="imagens/ruim.png" alt="Imagem 3">
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <script src="produtos.js"></script>
+</body>
+</html>
