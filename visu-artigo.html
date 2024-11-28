@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <title>Visualizar artigo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .artigo{
+            margin: auto;
+        }
+        
+        .artigo iframe {
+            width: 600px;
+            height: 95vh;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+            margin-top: 20px;
+        }
+
+        #aba-lateral {
+            height: 100vh;
+            width: 55px;
+            border-radius: 20px 0px 0px 20px;
+            background-color: #f2d2bb;      
+        }
+
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #abrir, #fechar {
+            color: #bf997e;
+            margin-top: 20px;
+            text-align: center;
+            width: 19px;
+        }
+
+
+        #abrir:hover, #fechar:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="artigo">
+         <iframe src="https://drive.google.com/file/d/1VxooslaRpShpBWxcKHp6yaU0EfOqchOx/preview" frameborder="0"></iframe>
+    </div>
+
+    <div id="aba-lateral">
+        <div class="icon">
+            <i class="material-icons" id="abrir" onclick="carregarInfo()">
+                arrow_back_ios
+            </i>
+        </div>
+        <div class="icon">
+            <i class="material-icons" id="fechar" onclick="fecharAba()">
+                arrow_forward_ios
+            </i>
+        </div>
+    </div>
+
+    <span id="aba-infos"></span>
+
+    <script>
+        function carregarInfo(){
+            document.getElementById('aba-infos').innerHTML = "<iframe src='aba-lateral.html' frameborder='0' id='aba-direita'></iframe>"
+
+            document.getElementById('aba-direita').style.width = "25vw"
+            document.getElementById('aba-direita').style.height = "100vh"
+            document.getElementById('artigo').style.width = "75%"
+            document.getElementById('aba-lateral').style.display = 'none'
+           
+        }
+
+        function fecharAba(){
+            document.getElementById("aba-infos").innerHTML = "";
+
+            document.getElementById("artigo").style.width = "75%";
+
+            document.getElementById("aba-direita").style.display = "none";
+
+            
+
+        }
+    </script>
+</body>
+</body>
+</html>
