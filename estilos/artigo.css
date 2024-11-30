@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header{
+    width: 100vw;
+    height: 264px;
+    text-align: center;
+    background-color: #fff8d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header p {
+    width: 717px;
+    line-height: 1.5em;
+}
+
+#flores1-artigo, #flores2-artigo{
+    position: absolute;
+}
+
+#flores1-artigo{
+    width: 327px;
+    left: 19px;
+    top: 50px;
+}
+
+#flores2-artigo{
+    width: 330px;
+    right: -81px;
+    top: 26px;
+}
+
+
+#onda-amarela{
+    width: 100%;
+    top: 43px;
+    position: absolute;
+    z-index: -1;
+}

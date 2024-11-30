@@ -104,11 +104,13 @@ section#bem-vindo>p {
 
 .emoji {
     text-align: center;
+    cursor: pointer;
 }
 
 .emoji:hover{
     transform: scale(1.09);
     transition: 0.18s;
+    cursor: pointer;
 }
 
 .emoji img {
