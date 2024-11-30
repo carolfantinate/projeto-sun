@@ -1,17 +1,15 @@
 .online-container {
     width: 270px;
+    height: 488px;
     background-color: #c0ffba;
     padding: 20px 20px 13px 20px;
     border-radius: 10px;
 }
 
-.especialista:hover  {
+.especialista:hover {
     font-weight: bold;
     color: #30973e;
-
-    &.info {
-        color: rgb(43, 144, 0);
-    }
+    cursor: pointer;
 }
 
 .online-container h3 {
@@ -26,6 +24,7 @@
     justify-content: space-between;
     padding: 9px 0;
     border-top: 1px solid #54cc64;
+    cursor: pointer;
 }
 
 .especialista:first-child {
@@ -52,8 +51,81 @@
     font-size: 25px;
 }
 
-.info:hover {
+.details {
+    display: none;
+    /* Oculta por padrão */
+    position: absolute;
+    top: 0px;
+    right: -280px;
+    width: 230px;
+    background-color: #bf997e;
+    padding: 17px;
+    border-radius: 8px;
+}
+
+.details.show {
+    display: block;
+    /* Exibe quando a classe "show" é adicionada */
+}
+
+.details h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.img-perfil{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+img#perfil-marrom {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.details p {
+    margin-bottom: 20px;
+}
+
+p.online {
+    color: #854c24;
+    text-align: center;
+}
+
+p.exp {
+    text-align: left;
+}
+
+p.nota {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.avaliacao-frequente {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+#avaliacao-imagem {
+    width: 150px;
+}
+
+.details button {
+    background: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
     cursor: pointer;
-    color: rgb(43, 144, 0);
-    transition: 0.5s;
+}
+
+.details button:hover {
+    background: #e65050;
 }
