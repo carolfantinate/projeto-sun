@@ -23,21 +23,38 @@ body {
 
 section#bem-vindo {
     height: 380px;
+    position: relative;
     text-align: center;
     background-color: var(--fundo-claro);
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-section#bem-vindo>h1 {
-    color: #bda211;
+
+#txt-bem-vindo {
+    width: 253px;
+    margin-bottom: 25px;
+    margin-top: 50px;
 }
 
 section#bem-vindo>p {
     margin: auto;
-    width: 450px;
-
+    width: 413px;
     line-height: 1.35em;
+}
+
+#flores-home {
+    width: 254px;
+    position: absolute;
+    left: 31px;
+    bottom: 5px;
+}
+
+#onda-home {
+    width: 439px;
+    position: absolute;
+    top: -3px;
+    right: 0px;
 }
 
 /*----------------------Seção Sentimentos-------------------------*/
@@ -46,7 +63,7 @@ section#bem-vindo>p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #d4f7c5;
+    background-color: #d6ffd4;
     height: 300px;
 }
 
@@ -89,8 +106,13 @@ section#bem-vindo>p {
     text-align: center;
 }
 
+.emoji:hover{
+    transform: scale(1.09);
+    transition: 0.18s;
+}
+
 .emoji img {
-    width: 60px;
+    width: 55px;
 }
 
 .emoji p {
@@ -105,71 +127,138 @@ section#sobre {
     padding-top: 35px;
     padding-bottom: 35px;
     background-color: var(--fundo-claro);
-
+    display: flex;
     text-align: center;
     line-height: 1.35em;
+    position: relative;
+    justify-content: space-evenly;
 }
 
-section#sobre>h1 {
+#onda-sobre {
+    width: 504px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    /*404*/
+}
+
+.foto {
+    width: 382px;
+    height: 323px;
+    background-color: rgb(194, 194, 194);
+    margin-left: 50px;
+}
+
+#texto-sobre {
+    z-index: 2;
+    margin-top: 10px;
+}
+
+section#sobre h1 {
+    font-family: "Katibeh", serif;
+    font-size: 3em;
     margin: 0px;
     color: #bda211;
+    margin-bottom: 30px;
 }
 
-section#sobre>p {
-    width: 500px;
+section#sobre p {
+    width: 542px;
     margin: auto;
 }
 
 /*----------------Seção final-------------------*/
 
-#botoes {
+#abas {
+    margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px;
 }
 
-footer {
-    width: 100vw;
-    background: url('imagens/onda-verde.png') no-repeat;
-    background-size: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    align-content: flex-start;
+#abas>a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
 }
 
-footer p {
-    color: rgb(183, 183, 183);
-    line-height: 7px;
+#abas a:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
 }
+
+#abas img {
+    border-radius: 50%;
+    width: 120px;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.137);
+}
+
 
 p#fim {
     margin: auto;
     padding-top: 55px;
     text-align: center;
-    width: 450px;
+    width: 473px;
     line-height: 1.35em;
 }
 
-.container-onda-verde {
+/*------------------------------*/
+
+.mae-footer{
+    position: relative;
+}
+
+footer {
     width: 100vw;
-    height: 284px;
+    display: flex;
+    height: 130px;
+    position: absolute;
+    top: 104px;
+    z-index: 2;
+}
+
+.contatos{
+    margin-left: 61px;
+}
+
+footer p {
+    color: rgb(183, 183, 183);
+    line-height: 7px;
+    color: rgb(255, 255, 255);
+}
+
+.container-verde {
+    position: relative;
+}
+
+.container-verde img {
     margin: 0;
     padding: 0;
 }
 
-/*img.onda-verde {
+.verde {
     width: 100vw;
-    background-repeat: repeat-x;
-    margin: 0;
-    background-size: cover;
-}*/
-
-.pedaço-verde {
+    background-color: #42791f;
+    height: 20px;
     position: absolute;
-    color: #791f1f;
-    width: 100vw;
-    height: 10px;
-    bottom: 0;
     z-index: 2;
+    bottom: -1px;
+}
+
+p.redes{
+    display: flex;
+    align-items: center;
+}
+
+p.redes a{
+    text-decoration: none;
+    color: white;
+}
+
+p.redes a:hover{
+    text-decoration: underline;
+}
+
+.logos{
+    width: 20px;
+    margin-right: 3px;
 }

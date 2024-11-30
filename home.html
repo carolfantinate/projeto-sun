@@ -7,6 +7,7 @@
     <title>SUN - saúde mental</title>
     <link rel="stylesheet" href="estilos/home.css">
     <link rel="stylesheet" href="estilos/navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -27,13 +28,15 @@
     </header>
     <main>
         <section id="bem-vindo">
-            <h1>Seja bem vindo(a)!</h1>
+            <img src="imagens/flores-home.png" alt="flores" id="flores-home">
+            <img src="imagens/txt-bem-vindo.png" id="txt-bem-vindo" alt="bem-vindo">
             <p>Sinta-se livre para explorar seus sentimentos e entender como eles influenciam sua vida. Estamos aqui
                 para priorizar sua saúde e bem-estar mental, além de te apoiar e auxiliar no seu conhecimento emocional
                 nessa fase tão inesperada que é a adolescência.</p>
             <p>No SUN você pode buscar o aconselhamento que precisar a qualquer momento, além de encontrar um refúgio
-                para expressar seus sentimentos</p>
-            <p>Aproveite!</p>
+                para expressar seus sentimentos. Aproveite!</p>
+
+            <img id="onda-home" src="imagens/onda-home.png" alt="onda e flores">
         </section>
 
         <div class="sentimentos">
@@ -45,6 +48,7 @@
             </div>
             <div class="emoji-section">
                 <p>Nos diga, como você está se sentindo?</p>
+                <!--Upar fotos melhores-->
                 <div class="emoçoes">
                     <a class="emoji">
                         <img alt="otimo" src="imagens/feliz.png" />
@@ -71,68 +75,91 @@
         </div>
 
         <section id="sobre">
-            <h1>Sobre Nós</h1>
-            <p>O SUN é uma plataforma que permite que o usuários se consultem com psicólogos, psiquiatras epsicanalistas
-                de maneira prática e eficiente, sempre priorizando seu conforto. Ademais, possibilita o acesso direto
-                com informações sobre alguns dos principais transtornos mentais, acarretando na conscientização do nosso
-                público.</p>
-            <p>O projeto foi desenvolvido por nossa equipe composta por 6 mulheres cursantes do ensino médio técnico do
-                estado de São Paulo. Ligado com a missão 3 “Saúde e Bem-estar” da ODS (Objetivos de Desenvolvimento
-                Sustentável), a realização de todas as etapas para a elaboração do nosso site estiveram alinhadas com
-                ideais de melhora na qualidade de vida e acessibilidade no tratamento.</p>
+            <img src="imagens/onda-sobre.png" id="onda-sobre" alt="onda">
+            <div id="texto-sobre">
+                <h1>Sobre Nós</h1>
+                <p>O SUN é uma plataforma que permite que o usuários se consultem com psicólogos, psiquiatras
+                    epsicanalistas
+                    de maneira prática e eficiente, sempre priorizando seu conforto. Ademais, possibilita o acesso
+                    direto
+                    com informações sobre alguns dos principais transtornos mentais, acarretando na conscientização do
+                    nosso
+                    público.
+                    <br> O projeto foi desenvolvido por nossa equipe composta por 6 mulheres cursantes do ensino médio
+                    técnico do
+                    estado de São Paulo. Ligado com a missão 3 “Saúde e Bem-estar” da ODS (Objetivos de Desenvolvimento
+                    Sustentável), a realização de todas as etapas para a elaboração do nosso site estiveram alinhadas
+                    com
+                    ideais de melhora na qualidade de vida e acessibilidade no tratamento.
+                </p>
+            </div>
+
+            <div class="foto"></div>
         </section>
 
         <section>
             <p id="fim">Agora que você já nos conheceu e entendeu nossa plataforma, explore nossos recursos e
                 ferramentas, acesse nossas abas e busque o auxilio que melhor se encaixar com as suas necessidades.</p>
 
-            <div id="botoes">
-                <a href="#">
-                    <img src="" alt="Transtornos">
+            <div id="abas">
+                <a href="transtornos.html">
+                    <img src="imagens/transtornos.png" alt="Transtornos">
                     <p>Transtornos</p>
                 </a>
-                <a href="#">
-                    <img src="" alt="Atendimento">
+
+                <a href="atendimento.html">
+                    <img src="imagens/atendimento.png" alt="Atendimento">
                     <p>Atendimento</p>
                 </a>
-                <a href="#">
-                    <img src="" alt="Artigo">
+
+                <a href="artigos.html">
+                    <img src="imagens/artigos.png" alt="Artigo">
                     <p>Artigo</p>
                 </a>
-                <a href="#">
-                    <img src="" alt="Planos">
+
+                <a href="planos.html">
+                    <img src="imagens/planos.png" alt="Planos">
                     <p>Planos</p>
                 </a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <p>Contate-nos:</p>
-            <p>sun.site@gmail.com</p>
-            <p>analuandrade@outlook.com</p>
-            <p>analurodrigues@outlook.com</p>
-            <p>barbaraaraújo@outlook.com</p>
+    <div class="mae-footer">
+        <footer>
+            <div class="contatos" id="contato-1">
+                <p>Contate-nos:</p>
+                <p>sun.site@gmail.com</p>
+                <p>analuandrade@outlook.com</p>
+                <p>analurodrigues@outlook.com</p>
+                <p>barbaraaraújo@outlook.com</p>
+            </div>
+            <div class="contatos" id="contato-2">
+                <p>beatrizsilva@outlook.com</p>
+                <p>carolfantinate@outlook.com</p>
+                <p>emanuellyaparecida@outlook.com</p>
+                <p>+55 (11) 2345-67890</p>
+            </div>
+            <div class="contatos" id="contato-3">
+                <p>Encontre-nos:</p>
+                <p class="redes">
+                    <a href="https://www.instagram.com/sun.saudemental?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                        <img src="imagens/logo-insta.png" alt="instagram" class="logos">
+                        @sun.saudemental
+                    </a>
+                </p>
+                <p class="redes">
+                    <a href="" target="_blank">
+                        <img src="imagens/logo-bsky.png" alt="bluesky" class="logos">
+                        @sun.saudemental.bsky.social
+                    </a>
+                </p>
+            </div>
+        </footer>
+        <div class="container-verde">
+            <img src="imagens/onda-verde.png" class="onda-verde">
+            <div class="verde"></div>
         </div>
-
-        <div>
-            <p>beatrizsilva@outlook.com</p>
-            <p>carolfantinate@outlook.com</p>
-            <p>emanuellyaparecida@outlook.com</p>
-            <p>+55 (11) 2345-67890</p>
-        </div>
-
-        <div>
-            <p>Encontre-nos:</p>
-            <p>@sun.saudemental</p>
-            <p>@sun.saudemental.bsky.social</p>
-        </div>
-    </footer>
-
-    <div class="container-onda-verde">
-    <img src="imagens/onda-verde.png" class="onda-verde">
-    <div class="pedaço-verde"></div>
     </div>
 </body>
 
