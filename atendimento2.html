@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="estilos/navbar.css">
     <link rel="stylesheet" href="estilos/calendário.css">
     <link rel="stylesheet" href="estilos/historico.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="estilos/online.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         body {
-            height: 1000px;
+            height: 860px;
         }
 
         .grid-container {
             display: grid;
             justify-content: center;
-            gap: 20px;
+            gap: 17px;
         }
 
         #item-1 {
@@ -33,6 +33,39 @@
         #item-3 {
             grid-column: 2;
             grid-row: 1 / span 2;
+            position: relative;
+        }
+
+        .div-padrao {
+            grid-column: 3;
+            grid-row:  1 /span 2;
+            height: 420px;
+            width: 230px;
+            background-color: #d7d5d5;
+            padding: 17px;
+            border-radius: 8px;
+        }
+
+        .div-padrao p{
+            text-align: center;
+            color: #8e8e8e;
+        }
+
+        .btn{
+            text-align: center;
+            box-sizing: border-box;
+            position: relative;
+            top: 174px;
+            font-weight: bold;
+            background-color: #ffee95;
+            color: #ffc30f;
+            border: 3px solid #fbd300;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 50px;
+            grid-column: 3;
+            height: 50px;
+            grid-row:  2;
         }
     </style>
 </head>
@@ -47,10 +80,10 @@
         <nav>
             <a href="home.html" class="nav">Home</a>
             <a href="transtornos.html" class="nav">Transtornos</a>
-            <a href="#" class="nav">Planos</a>
+            <a href="planos.html" class="nav">Planos</a>
             <a href="#" id="atual">Atendimento</a>
-            <a href="#" class="nav">Produtos</a>
-            <a href="#" class="nav">Artigo</a>
+            <a href="produtos.html" class="nav">Produtos</a>
+            <a href="" class="nav">Artigo</a>
         </nav>
     </header>
 
@@ -177,12 +210,60 @@
                     </div>
                     <i class="material-icons info">info</i>
                 </div>
+
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png" class="especialista-avatar"
+                            alt="Especialista 4">
+                        <p>Especialista 4</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png" class="especialista-avatar"
+                            alt="Especialista 5">
+                        <p>Especialista 5</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png" class="especialista-avatar"
+                            alt="Especialista 6">
+                        <p>Especialista 6</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png" class="especialista-avatar"
+                            alt="Especialista 7">
+                        <p>Especialista 7</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
+
+                <div class="especialista">
+                    <div class="especialista-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png" class="especialista-avatar"
+                            alt="Especialista 8">
+                        <p>Especialista 8</p>
+                    </div>
+                    <i class="material-icons info">info</i>
+                </div>
             </div>
+
+            
 
             <!-- Detalhes do especialista -->
             <div class="details">
                 <h4>Especialista</h4>
-                <img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png" alt="foto-perfil" id="perfil-marrom">
+                <div class="img-perfil"><img src="https://cdn-icons-png.flaticon.com/512/9706/9706583.png"
+                        alt="foto-perfil" id="perfil-marrom"></div>
                 <p class="online">On-line agora</p>
                 <p class="exp">Informações sobre o especialista aparecerão aqui.</p>
                 <p class="nota">Avaliação frequente</p>
@@ -191,12 +272,93 @@
                     <img src="https://via.placeholder.com/100x20" alt="Avaliação frequente" id="avaliacao-imagem" />
                 </div>
 
-                <button>Fechar</button>
+                <div><button><i class="material-icons"id="fechar">close</i></button></div>
             </div>
         </div>
+
+        <div class="div-padrao">
+            <p>Selecione um especialista</p>
+        </div>
+
+        <a href="chat.html" class="btn">Chat</a>
     </div>
 
-    <script src="online.js"></script>
+    <script>
+        // Seleciona todos os especialistas e a aba de detalhes
+        const container = document.getElementById("item-3")
+        const especialistas = document.querySelectorAll(".especialista");
+        const details = document.querySelector(".details");
+        const detailsTitle = details.querySelector("h4");
+        const detailsContent = details.querySelector("p.exp");
+        const detailsAvaliacao = details.querySelector("#avaliacao-imagem");
+        const divPadrao = document.getElementById("div-padrao")
+        const closeButton = details.querySelector("button");
+
+        // Informações fictícias para exibição dinâmica
+        const especialistasData = [
+            {
+                nome: "Especialista 1",
+                descricao: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae rem aut esse omnis quas necessitatibus facilis aliquid dolorem atque.",
+                avaliacao: "notas/esp1-nota.png"
+            },
+            {
+                nome: "Especialista 2",
+                descricao: "Detalhes do Especialista 2, área de atuação e avaliações.",
+                avaliacao: "notas/esp2-nota.png"
+            },
+            {
+                nome: "Especialista 3",
+                descricao: "Perfil do Especialista 3 com especialidades e horários disponíveis.",
+                avaliacao: "notas/esp3-nota.png"
+            },
+            {
+                nome: "Especialista 4",
+                descricao: "Perfil do Especialista 4 com especialidades e horários disponíveis.",
+                avaliacao: "notas/esp4-nota.png"
+            },
+            {
+                nome: "Especialista 5",
+                descricao: "Perfil do Especialista 5 com especialidades e horários disponíveis.",
+                avaliacao: "notas/esp4-nota.png"
+            },
+            {
+                nome: "Especialista 6",
+                descricao: "Perfil do Especialista 6 com especialidades e horários disponíveis.",
+                avaliacao: "notas/esp4-nota.png"
+            },
+            {
+                nome: "Especialista 7",
+                descricao: "Perfil do Especialista 7 com especialidades e horários disponíveis.",
+                avaliacao: "notas/esp4-nota.png"
+            },
+            {
+                nome: "Especialista 8",
+                descricao: "Perfil do Especialista 8 com especialidades e horários disponíveis.",
+                avaliacao: "notas/esp4-nota.png"
+            },
+        ];
+
+        // Adiciona evento de clique para cada especialista
+        especialistas.forEach((especialista, index) => {
+            especialista.addEventListener("click", () => {
+                detailsTitle.textContent = especialistasData[index].nome;
+                detailsContent.textContent = especialistasData[index].descricao;
+                detailsAvaliacao.src = especialistasData[index].avaliacao;
+
+                // Mostra a aba de detalhes
+                details.classList.add("show");
+
+                divPadrao.style.display = ""
+            });
+        });
+
+        // Fecha a aba de detalhes ao clicar no botão
+        closeButton.addEventListener("click", () => {
+            details.classList.remove("show");
+            container.style.marginRight = ""
+        });
+
+    </script>
 </body>
 
 </html>

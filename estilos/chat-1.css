@@ -10,6 +10,12 @@ body {
     align-items: center;
 }
 
+#voltar{
+    color: white;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
 .search-bar {
     margin: auto;
     background-color: #ffffff;

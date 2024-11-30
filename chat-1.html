@@ -11,6 +11,7 @@
 
 <body>
     <div class="header">
+        <i class="material-icons" id="voltar" onclick="voltar()">arrow_back_ios</i>
     </div>
     <ul class="chat-list">
         <li class="chat-item">
@@ -55,6 +56,12 @@
 
         
     </ul>
+
+    <script>
+        function voltar(){
+            history.back();
+        }
+    </script>
 </body>
 
 </html>
