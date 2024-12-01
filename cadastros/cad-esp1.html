@@ -44,19 +44,57 @@
             <h1>Cadastre-se!</h1>
             <p>Preencha os dados necessários para utilizar a plataforma como especialista.
             </p>
-            <form action="cad-esp2.html">
-                <input type="text" name="nome" id="nome" placeholder="Nome completo" required> <br>
-                <input type="email" name="email" id="email" placeholder="E-mail" required> <br>
-                <input type="text" name="esp" id="esp" placeholder="Especialidade" required list="lstesp">
-                <datalist id="lstesp">
-                    <option value="x1"></option>
-                    <option value="x2"></option>
-                    <option value="x3"></option>
-                </datalist>
-                <br>
-                <input type="password" name="senha" id="senha" placeholder="Senha" required minlength="8">
-                <button class="btn" id="seguir">Seguir</button>
+
+            <form id="form">
+
+                <div class="form-control">
+                    <input 
+                    type="text" 
+                    id="nome" 
+                    placeholder="Nome completo">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <input 
+                    type="text"
+                    id="email" 
+                    placeholder="E-mail">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <input 
+                    type="text" 
+                    id="esp" 
+                    placeholder="Especialidade" 
+                    list="lstesp">
+                        <datalist id="lstesp">
+                            <option value="x1"></option>
+                            <option value="x2"></option>
+                            <option value="x3"></option>
+                        </datalist>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+                
+                <div class="form-control">
+                    <input type="password"
+                    id="senha" 
+                    placeholder="Senha">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <button type="submit" class="btn" id="seguir">Seguir</button>
             </form>
+
             <p id="pag">1/2</p>
         </main>
         <p class="logar">Se você já possui uma conta, clique <a href="../logins/login-esp.html">aqui</a></p>
@@ -69,6 +107,9 @@
         </svg>
     </div>
     <div class="fundo-onda"></div>
+
+    <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
+    <script src="cad-esp1.js"></script>
 </body>
 
 </html>
