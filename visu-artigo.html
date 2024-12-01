@@ -11,6 +11,8 @@
             padding: 0;
             display: flex;
             justify-content: space-between;
+
+            overflow-y: hidden;
         }
 
         .artigo{
@@ -48,9 +50,21 @@
         #abrir:hover, #fechar:hover{
             cursor: pointer;
         }
+
+        #voltar{
+            margin: 17px 10px 10px 17px;
+            cursor: pointer;
+            height: 20px;
+        }
+
+        #voltar:hover{
+            transform: scale(1.09);
+            transition: 0.3s;
+        }
     </style>
 </head>
 <body>
+    <i class="material-icons" id="voltar" onclick="voltar()">arrow_back_ios</i>
     <div class="artigo">
          <iframe src="https://drive.google.com/file/d/1VxooslaRpShpBWxcKHp6yaU0EfOqchOx/preview" frameborder="0"></iframe>
     </div>
@@ -72,7 +86,7 @@
 
     <script>
         function carregarInfo(){
-            document.getElementById('aba-infos').innerHTML = "<iframe src='aba-lateral.html' frameborder='0' id='aba-direita'></iframe>"
+            document.getElementById('aba-infos').innerHTML = "<iframe src='aba-artigo.html' frameborder='0' id='aba-direita'></iframe>"
 
             document.getElementById('aba-direita').style.width = "25vw"
             document.getElementById('aba-direita').style.height = "100vh"
@@ -87,9 +101,10 @@
             document.getElementById("artigo").style.width = "75%";
 
             document.getElementById("aba-direita").style.display = "none";
+        }
 
-            
-
+        function voltar(){
+            window.location.href = "artigo.html"
         }
     </script>
 </body>

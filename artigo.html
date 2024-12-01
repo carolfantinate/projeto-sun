@@ -6,6 +6,7 @@
     <title>Artigo</title>
     <link rel="stylesheet" href="estilos/navbar.css">
     <link rel="stylesheet" href="estilos/artigo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <div class="topo">
@@ -32,5 +33,32 @@
 
         <img src="imagens/onda-amarela.png" alt="onda" id="onda-amarela">
     </section>
+
+    <section class="nosso-artigo">
+        <div class="textos">
+            <h2 class="nome-artigo">O TRANSTORNO DE ANSIEDADE GENERALIZADA (TAG): COMO AFETA OS ESTUDANTES DA ETEC DE TABOÃO DA SERRA</h2>
+            <ul class="palavras-chave">
+                <li>Ansiedade</li>
+                <li>Estudantes</li>
+                <li>Ensino Médio</li>
+                <li>TAG</li>
+                <li>ETEC de Taboão da Serra</li>
+            </ul>
+            <p class="resumo">O estudo investiga as causas do Transtorno de Ansiedade Generalizada (TAG) entre jovens do ensino médio da ETEC de Taboão da Serra, através de coleta de dados e revisão bibliográfica. As principais causas identificadas incluem pressão escolar, autocobrança, sobrecarga acadêmica e incertezas sobre o futuro, com a ansiedade aumentando a cada série, especialmente no 3º ano. Conclui-se que é fundamental implementar suporte para alunos com ansiedade e desenvolver prevenções. Para pesquisas futuras, sugere-se buscar intervenções que ofereçam apoio e descontrações na vida acadêmica.</p>
+            <p id="autoras">Autores: ANDRADE, Ana., RODRIGUES, Ana., ARAÚJO, Bárbara., SILVA, Beatriz., ASSUNÇÃO, Caroline., SANTOS, Emanuelly.</p>
+        </div>
+        <div class="ver-artigo">
+            <img src="imagens/capa-artigo.png" class="capa-artigo">
+            <i class="material-icons" id="full" title="Visualizar artigo" onclick="abrirArtigo()">fullscreen</i>
+        </div>
+    </section>
+
+    <section></section>
+
+    <script>
+        function abrirArtigo(){
+            window.location.href = "visu-artigo.html"
+        }
+    </script>
 </body>
 </html>
