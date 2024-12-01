@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 #pag {
@@ -189,6 +190,6 @@ input:focus {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 115px;
+    height: 1000px;
     background-color: #fff9c4;
 }

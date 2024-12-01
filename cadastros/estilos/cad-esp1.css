@@ -8,6 +8,7 @@ body {
     justify-content: space-evenly;
     height: 100vh;
     align-items: center;
+    overflow-y: hidden;
 }
 
 p {
@@ -43,8 +44,9 @@ p {
     padding: 20px;
 }
 
-input#li {
-    width: 25px;
+input#termsCheckbox {
+    height: 20px;
+    transform: scale(1.8);
     margin-right: 15px;
 }
 
@@ -60,8 +62,15 @@ p#checkbox {
 }
 
 h2 {
-    font-size: 2em;
     color: #2092db;
+    font-family: "Katibeh", serif;
+    letter-spacing: 0.7px;
+    font-size: 3.3em;
+    margin: 0px;
+}
+
+.seguir{
+    margin-bottom: -20px;
 }
 
 a {
@@ -101,7 +110,7 @@ img {
 
 .form-control input {
     width: 350px;
-    height: 30px;
+    height: 32px;
     padding: 5px;
     border: 0px;
     border-radius: 50px;
@@ -120,7 +129,7 @@ img {
 
 .form-control small {
     position: absolute;
-    top: 41px;
+    top: 44px;
     left: 23px;
     visibility: hidden;
 }
@@ -190,7 +199,7 @@ input:focus {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 115px;
+    height: 1000px;
     background-color: #bbe5ff;
 }
 

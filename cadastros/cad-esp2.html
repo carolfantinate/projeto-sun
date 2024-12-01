@@ -11,7 +11,7 @@
 
 <body>
     <div id="textos">
-        <p class="meio">Ao seguir como</p>
+        <p class="meio seguir">Ao seguir como</p>
         <h2 class="meio">Especialista</h2>
         <p>Você terá acesso a conteúdos diferenciados e específicos para sua área de atuação, seja ela psicologia,
             psicanálise, psiquiatria, psicoterapia, entre outros. Será possível analisar estatísticas de uso e consumo
@@ -21,7 +21,7 @@
         <p>Para continuar, leia os termos de privacidade e da regulamentação da participação em nosso projeto <a
                 href="">aqui</a> e esteja ciente das responsabilidades associadas a este serviço e da importância que
             você representa para nossa plataforma e para seus usuários ao fazer parte da nossa comunidade.</p>
-        <p id="checkbox"><input type="checkbox" name="li" id="li">Li, compreendo e aceito os termos de privacidade e
+        <p id="checkbox"><input type="checkbox" name="li" id="termsCheckbox">Li, compreendo e aceito os termos de privacidade e
             regulamentação.</p>
     </div>
 
@@ -50,6 +50,8 @@
                     </label>
                 </div>
 
+                <input type="number" id="cip" placeholder="CIP">
+
                 <textarea name="area" id="area" placeholder="Deixar comentário"></textarea> <br>
 
                 <button class="btn" id="cadatrar">Cadastrar</button>
@@ -67,20 +69,8 @@
     </div>
     <div class="fundo-onda"></div>
 
-    <script>
-        const fileInput = document.getElementById("file-input");
-        const fileNameSpan = document.getElementById("file-name");
-
-        fileInput.addEventListener("change", () => {
-            const file = fileInput.files[0]; // Obtém o primeiro arquivo selecionado
-            if (file) {
-                fileNameSpan.textContent = file.name; // Atualiza o texto com o nome do arquivo
-            } else {
-                fileNameSpan.textContent = "Anexar currículo (PDF)"; // Texto padrão caso não haja arquivo
-            }
-        });
-
-    </script>
+    <script src="cad-esp2.js"></script>
+    <script src="check.js"></script>
 </body>
 
 </html>
