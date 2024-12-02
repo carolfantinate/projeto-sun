@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .carousel-container {
@@ -14,6 +14,7 @@ body {
     max-width: 800px;
     margin: 40px auto;
     overflow: hidden;
+    margin-top: 60px;
 }
 
 .carousel {
@@ -69,6 +70,53 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.p {
-    font-size: 500px;
+.par1 {
+    margin-left: 120px;
+    margin-top: 130px;
+    text-align: justify-all;
+}
+
+.par2 {
+    margin-left: 130px;
+    margin-top: 150px;
+    text-align: justify;
+}
+
+.par3 {
+    margin-left: 740px;
+    margin-top: 130px;
+    text-align: justify-all;
+}
+
+#compre {
+    margin-top: 100px;
+    margin-left: 290px;
+    height: 40px;
+    width: 120px;
+    border-radius: 12px;
+    border-color: #ffc30f;
+    background-color: #ffc30f;
+    font-weight: bolder;
+}
+
+a:hover {
+    background-color: #dfa701;
+    color: whitesmoke;
+    border-color: #dfa701;
+}
+
+#compre:hover {
+    background-color: #dfa701;
+    color: whitesmoke;
+    border-color: #dfa701;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 150px;
 }
