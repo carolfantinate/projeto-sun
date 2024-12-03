@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        @charset "UTF-8";
+
+        @import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Katibeh&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        :root {
+            --cabeçalho: #fbd300;
+            --fundo-claro: #fff8d4;
+            --fundo-verde: #d6ffd4;
+            --amarelinho: #ffee95;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Open Sans", sans-serif;
+            box-sizing: border-box;
+
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .geral{
+            display: flex;
+        }
+
+        .topo {
+           
+            margin: 0px;
+            width: 99vw;
+            height: 40px;
+            padding: 10px;
+            background-color: var(--cabeçalho);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #frase {
+            color: white;
+            text-align: center;
+            align-self: center;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 100vh;
+            padding: 30px 0px 30px 30px;
+        }
+
+        img {
+            width: 100px;
+            margin-bottom: 25px;
+        }
+
+        .nav {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .nav:hover {
+            background-color: #ffee95;
+            padding: 7px;
+            border-radius: 5px;
+        }
+
+        .sair {
+            cursor: pointer;
+            color: rgb(156, 156, 156);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 7px;
+        }
+
+        .sair:hover{
+            color: gray;
+        }
+
+        .perfil{
+            width: 907px;
+            height: 100vh;
+            border-radius: 20px 0px 0px 20px;
+            box-shadow: -14px 3px 12px rgba(0, 0, 0, 0.137);            
+            padding: 64px;
+        }
+
+        .img-perfil{
+            width: 100px; 
+            height: 100px;       
+            margin: 0;
+        }
+
+        .textos{
+            margin-left: 25px;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+        }
+
+        .since{
+            color: gray;
+            margin: 0;
+        }
+
+        .humor{
+            width: 25%;
+            height: 100vh;
+            border-radius: 20px 0px 0px 20px;
+            box-shadow: -14px 3px 12px rgba(0, 0, 0, 0.137); 
+        }           
+    </style>
+</head>
+
+<body>
+    <div class="topo">
+        <p id="frase">Fique a vontade, aqui você é livre!</p>
+    </div>
+    <div class="geral">
+        <nav>
+            <img src="imagens/logo.png" alt="logo">
+            <a href="home.html" class="nav">Home</a>
+            <a href="transtornos.html" class="nav">Transtornos</a>
+            <a href="planos.html" class="nav">Planos</a>
+            <a href="atendimento.html" class="nav">Atendimento</a>
+            <a href="produtos.html" class="nav">Produtos</a>
+            <a href="artigo.html" class="nav">Artigo</a>
+            <a class="sair"><i class="material-icons">logout</i> Sair</a>
+        </nav>
+        <main class="perfil">
+            <div class="info">
+                <img src="imagens/perfil.png" class="img-perfil">
+                <div class="textos">
+                    <h2>Nome</h2>
+                    <p class="since">No SUN desde: <strong>2024</strong></p>
+                </div>
+            </div>
+        </main>
+
+        <section class="humor">
+
+        </section>
+    </div>
+</body>
+
+</html>
