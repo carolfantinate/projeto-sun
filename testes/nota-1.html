@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Anotações</title>
+    <link rel="stylesheet" href="nota.css">
+</head>
+
+<body>
+    <div class="notes">
+        <div class="add-note" id="addNote">
+            <p>+</p>
+        </div>
+        <div class="note-list" id="noteList">
+            <!-- As anotações serão exibidas aqui dinamicamente -->
+        </div>
+    </div>
+
+    <script>
+        // Redireciona para a página de criação de nova anotação
+        document.getElementById('addNote').addEventListener('click', () => {
+            window.location.href = 'nota-2.html';
+        });
+
+        // Carrega as anotações salvas no localStorage
+        function loadNotes() {
+            const notes = JSON.parse(localStorage.getItem('notes')) || [];
+            const noteList = document.getElementById('noteList');
+
+            // Limpa a lista antes de renderizar
+            noteList.innerHTML = '';
+
+            // Cria um elemento para cada anotação salva
+            notes.forEach((note, index) => {
+                const noteElement = document.createElement('div');
+                noteElement.className = 'note';
+                noteElement.innerText = `Anotação ${index + 1}`;
+                noteElement.addEventListener('click', () => {
+                    // Redireciona para a página de edição, passando o índice da anotação na URL
+                    window.location.href = `nota-2.html?noteIndex=${index}`;
+                });
+                noteList.appendChild(noteElement);
+            });
+        }
+
+        // Carrega as anotações ao iniciar a página
+        window.onload = loadNotes;
+    </script>
+</body>
+
+</html>

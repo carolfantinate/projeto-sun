@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+html {
+    background-color: #fff2e6;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --main-color: #ffffff;
+    --text-color: #ff8888;
+    --alt-color: #ffbe98;
+    --light-color: #ffcdcb;
+    --bg: #fff2e6;
+    --box-shadow: 0.05rem 0.05rem #ffbe98;
+    --alinhamento: center, left;
+}
+
+.material-symbols-outlined {
+    color: #ff8888;
+}
+
+header {
+    padding: 10px 0;
+    height: 33px;
+    box-shadow: 0rem 0.05rem #ffbe98;
+    display: flex;
+    background-color: #FFF2E6;
+}
+
+/*Logo do Femme Up*/ 
+.logo {
+    width: 130px;
+}
+
+.menu {
+    width: 85%;
+    text-align: left;
+    margin-left: 15px;
+}
+
+/*Função dos botões do cabeçalho*/ 
+.menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.menu a:hover {
+    color: var(--alt-color);
+}
+
+.convite {
+    font-family: Great Vibes, 'sans=serif';
+    font-size: 105px;
+    text-align: center;
+    color: #ff8888;
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-bottom: -50px;
+}
+
+.invite {
+    font-family: 'The Youngest Serif', 'sans-serif';
+    font-size: 70px;
+    color: #ff8888;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.explicacao {
+    font-family: Quicksand, 'sans-serif';
+    font-size: 25px;
+    color: #ff8888;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    padding: 6px 20px;
+    background-color: #F28C82;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Quicksand, 'sans-serif';
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 220px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+.button:hover {
+    background-color: #ffb28d;
+}
+
+.footer {
+    background-color: #ffcdcb;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.footer .left {
+    color: #ff8888;
+    font-size: 16px;
+    font-family: Quicksand, 'sans-serif';
+    text-align: justify;
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+.footer .left img {
+    height: 75px;
+    vertical-align: middle;
+    margin-left: -10px;
+}
+
+.footer .right {
+    color: #ff8888;
+    font-size: 16px;
+    font-family: Quicksand, 'sans-serif';
+    text-align: justify;
+    font-weight: bold;
+    margin-right: 200px;
+    line-height: 2;
+    word-spacing: 5px;
+}
+
+.footer .right i {
+    font-size: 25px;
+}
+
+.footer .right a {
+    color: inherit;
+    text-decoration: none;
+}

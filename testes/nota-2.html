@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Anotação</title>
+  <link rel="stylesheet" href="nota.css">
+  <style>
+    .toolbar button {
+      margin-right: 10px;
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .text-editor {
+      border: 1px solid #ccc;
+      padding: 10px;
+      min-height: 200px;
+      background-color: white;
+      margin-top: 10px;
+    }
+    .delete-button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    .delete-button:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <div class="editor">
+    <button id="back" class="back-button">&larr;</button>
+    <div class="toolbar">
+      <button id="boldButton"><b>B</b></button>
+      <button id="italicButton"><i>I</i></button>
+      <button id="underlineButton"><u>U</u></button>
+    </div>
+    <h2>Minha anotação</h2>
+    <!-- Área de texto editável -->
+    <div id="noteEditor" contenteditable="true" class="text-editor"></div>
+    <div class="actions">
+      <button id="saveNote">Salvar</button>
+      <button id="deleteNote" class="delete-button">Apagar</button>
+    </div>
+  </div>
+
+  <script>
+    // Voltar para a página inicial
+    document.getElementById('back').addEventListener('click', () => {
+      window.location.href = 'nota-1.html';
+    });
+
+    // Carregar a anotação para edição
+    function loadNote() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const noteIndex = urlParams.get('noteIndex');
+
+      if (noteIndex !== null) {
+        const notes = JSON.parse(localStorage.getItem('notes')) || [];
+        const noteContent = notes[noteIndex];
+
+        if (noteContent) {
+          document.getElementById('noteEditor').innerHTML = noteContent;
+        }
+      }
+    }
+
+    // Salvar a anotação no localStorage
+    document.getElementById('saveNote').addEventListener('click', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const noteIndex = urlParams.get('noteIndex');
+      const content = document.getElementById('noteEditor').innerHTML.trim();
+
+      if (content) {
+        let notes = JSON.parse(localStorage.getItem('notes')) || [];
+
+        if (noteIndex !== null) {
+          notes[noteIndex] = content;
+        } else {
+          notes.push(content);
+        }
+
+        localStorage.setItem('notes', JSON.stringify(notes));
+        window.location.href = 'nota-1.html';
+      } else {
+        alert('A anotação não pode estar vazia!');
+      }
+    });
+
+    // Apagar a anotação com confirmação
+    document.getElementById('deleteNote').addEventListener('click', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const noteIndex = urlParams.get('noteIndex');
+
+      if (noteIndex !== null) {
+        const userConfirmed = confirm(
+          'Essa ação é permanente e não poderá ser desfeita. Deseja continuar?'
+        );
+
+        if (userConfirmed) {
+          let notes = JSON.parse(localStorage.getItem('notes')) || [];
+          notes.splice(noteIndex, 1);
+          localStorage.setItem('notes', JSON.stringify(notes));
+          window.location.href = 'nota-1.html';
+        }
+      } else {
+        alert('Nenhuma anotação foi selecionada para apagar.');
+      }
+    });
+
+    // Funções de formatação (negrito, itálico, sublinhado)
+    document.getElementById('boldButton').addEventListener('click', () => {
+      document.execCommand('bold');
+    });
+
+    document.getElementById('italicButton').addEventListener('click', () => {
+      document.execCommand('italic');
+    });
+
+    document.getElementById('underlineButton').addEventListener('click', () => {
+      document.execCommand('underline');
+    });
+
+    // Carregar a anotação ao iniciar a página
+    window.onload = loadNote;
+  </script>
+
+</body>
+</html>
