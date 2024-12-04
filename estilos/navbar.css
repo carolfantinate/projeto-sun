@@ -44,6 +44,8 @@ header {
 header>nav {
     text-align: right;
     align-self: center;
+    display: flex;
+    align-items: center;
 }
 
 header img {
@@ -70,4 +72,17 @@ header img {
     background-color: #e9e9e993;
     padding: 7px;
     border-radius: 5px;
+}
+
+#user{
+    text-decoration: none;
+    color: gray;
+    font-size: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#user:hover{
+    color: rgb(68, 68, 68);
+    cursor: pointer;
 }
