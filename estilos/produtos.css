@@ -70,6 +70,12 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+p {
+    line-height: 1.6em;
+    width: 605px;
+    text-align: justify;
+}
+
 .par1 {
     margin-left: 120px;
     margin-top: 130px;
